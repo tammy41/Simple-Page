@@ -1,0 +1,66 @@
+@charset "utf-8";
+/* CSS Document */
+html,body,div,h3,a,ul,li{ margin:0 auto; font-family:Microsoft Yahei;}
+body{ background-color:#F2F3F8;}
+a{ text-decoration:none;}
+@font-face {font-family: 'iconfont';
+    src: url('../IconFont/iconfont.eot'); /* IE9*/
+    src: url('../IconFont/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../IconFont/iconfont.woff') format('woff'), /* chrome、firefox */
+    url('../IconFont/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('../IconFont/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+.iconfont{
+    font-family:"iconfont" !important;
+    font-size:16px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;}
+
+#top_box{ border-bottom:1px solid #E0E2E1; background-color:#FFF;}
+#header{ width:1100px; height:80px; margin:0 auto; line-height:80px;}
+#header .place{ display:inline-block; margin:0 30px;}
+#header .job{ display:inline-block; width:55px; margin:0 5px; color:#63676A; font-size:24px; background:url(../img/line.png) no-repeat right center;}
+#header .position{ color:#5CB774; margin-left:25px;}
+#header .user{ float:right;}
+#header .user #issue{ display:inline-block; width:100px; height:35px; background:#B71017; line-height:35px; text-align:center; color:#FFF; margin-left:20px; }
+#header .user a{ color:#59595B;}
+
+#nav{ height:131px; width:1096px; border-bottom:2px solid #FED839; margin-top:25px; background:#FFF;}
+#nav img{ height:61px;}
+#nav .menu{ height:50px; padding:10px 20px;}
+#nav .menu h3.menu-title{ display:inline-block; height:25px; line-height:25px; font-size:14px; color:#5A5A5A;}
+#nav .menu span{ display:inline-block; width:35px; height:18px; line-height:18px; text-align:center; background-color:#FFCA02; color:#FFF; font-size:14px; margin:0 5px;}
+#nav .menu a{ color:#424242; font-size:14px; display:inline-block; margin:0 5px;}
+
+#choice{ height:48px; width:1076px; background-color:#FFF; margin-top:10px; padding-left:20px; border:1px solid #F6F7FB; line-height:48px; font-size:13px; color:#565656; }
+#choice span{ display:inline-block; margin-right:20px;}
+#choice .sort{ float:right;}
+#choice span.rank{ display:inline-block; height:18px; width:60px; text-align:center; line-height:18px; border:1px solid #FDCB36;}
+
+.term{ width:1100px; height:108px; background-color:#FFF; margin-top:10px; position:relative;}
+.term dl{ width:260px;}
+.term dl dt{ clear:inherit; width:70px; height:70px; padding:19px; float:left;}
+.term dl dt img{ border:1px solid #FFD533;}
+.term dl dd.dd_title a{ display:block; padding-top:20px; color:#267ED7; font-size:16px; font-weight:bold;}
+.term dl dd{ font-size:13px; color:#626262;}
+.term dl dd.dd_left{ padding-top:4px;}
+.term .d_right{ position:absolute; left:320px; top:45px;}
+.term .d_right span{ font-size:13px; color:#626262;}
+.term .enter{ position:absolute; right:20px; top:0; height:108px; width:460px; line-height:108px;}
+.term .enter span{ color:#626262; font-size:14px;}
+.term .enter span.font_style{ color:#FD5900; font-weight:bold; margin-left:100px;}
+.term .enter span.last{ display:inline-block; width:130px; height:35px; background-color:#B71017; text-align:center; line-height:35px; color:#FFF; font-size:16px; margin-left:50px;}
+
+#page{ width:810px; height:100px; text-align:center; margin-top:30px;}
+#page li.li_first{ background:#FED839;}
+#page li.li_last{ width:68px;}
+#page li{ height:35px; width:35px; background:#FFF; list-style-type:none; float:left; margin:10px; line-height:35px;}
+
+#footer{ height:180px; background:#B71017; margin-top:10px; color:#FFF;}
+#footer .footer-link{ width:1100px; height:80px; padding:20px;}
+#footer .footer-about{ width:1100px; padding:0 20px;}
+#footer .footer-about a{ color:#FFF; display:inline-block; width:70px; background:url(../img/line2.jpg) no-repeat right center; padding-left:10px; }
+#footer .footer-about a.f_first{ padding-left:0;}
+#footer .footer-about a.f_last{ background:none;}
+#footer .footer{ width:1100px; padding:0 20px;}
