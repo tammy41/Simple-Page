@@ -1,0 +1,135 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+
+<style type="text/css">
+body{
+	background:url(images/3.jpg);
+}
+.but{
+	width:50px;
+	height:50px;
+	background:url(images/upseek.png);
+	display:block;
+	position:fixed;
+	top:0;
+	right:0;
+	z-index:1;/*z-index越大，该层叠放的越上，默认是0*/
+}
+a.but:hover{
+	background-position:0 -64px;
+}
+.huanfu{
+	width: 100%;
+	height: 150px;
+	background-color:rgba(0,0,0,0.4);
+	position:fixed;
+	top: 0px;
+	left: 0px;
+	display:none;/*隐藏*/
+}
+.box{
+	width:705px;
+	height:150px;
+	margin:0 auto;
+	position:relative;
+}
+.huanfu .box img.prev{
+	position:absolute;
+	top:70px;
+}
+.huanfu .box img.next{
+	position:absolute;
+	top:70px;
+	right:0;
+}
+.scroll{
+	width:656px;
+	height:150px;
+	margin:0 auto;
+	overflow:hidden;/*超出内容隐藏*/
+	position:relative;
+}
+ul{
+	width: 9999px;
+	height: 80px;
+	margin: 0;
+	padding: 0;
+	padding-top: 45px;
+	position: absolute;
+	left:0px;/*滚动就是不断改变他的值*/
+}
+ul li{
+	width:138px;
+	height:75px;
+	border:3px solid #FFF;
+	list-style-type:none;
+	float:left;
+	margin:0 10px;
+}
+ul li img{
+	 width:138px; height:75px;
+}
+</style>
+
+</head>
+
+<body>
+<!--按钮-->
+<a href="#" class="but"></a>
+
+<div class="huanfu">
+	<div class="box">
+    	<img src="images/dirl.png" class="prev" />
+        <img src="images/dirr.png" class="next" />
+        <div class="scroll">
+        	<ul>
+            	<li><img src="images/1-1.jpg" dataScr="images/1.jpg" /></li>
+                <li><img src="images/2-2.jpg" dataScr="images/2.jpg" /></li>
+                <li><img src="images/3-3.jpg" dataScr="images/3.jpg" /></li>
+                <li><img src="images/4-4.jpg" dataScr="images/4.jpg" /></li>
+                <li><img src="images/5-5.jpg" dataScr="images/5.jpg" /></li>
+                <li><img src="images/6-6.jpg" dataScr="images/6.jpg" /></li>
+                <li><img src="images/7-7.jpg" dataScr="images/7.jpg" /></li>
+                <li><img src="images/8-8.jpg" dataScr="images/8.jpg" /></li>
+                <li><img src="images/9-9.jpg" dataScr="images/9.jpg" /></li>
+                <li><img src="images/10-10.jpg" dataScr="images/10.jpg" /></li>
+                <li><img src="images/11-11.jpg" dataScr="images/11.jpg" /></li>
+                <li><img src="images/12-12.jpg" dataScr="images/12.jpg" /></li>
+                <li><img src="images/13-13.jpg" dataScr="images/13.jpg" /></li>
+                <li><img src="images/14-14.jpg" dataScr="images/14.jpg" /></li>
+                <li><img src="images/15-15.jpg" dataScr="images/15.jpg" /></li>
+                <li><img src="images/16-16.jpg" dataScr="images/16.jpg" /></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript">
+$(".but").click(function(){
+	$(".huanfu").slideToggle();//自动判断收缩展开
+});
+
+$(".scroll ul li").click(function(){
+	var bimg = $(this).find("img").attr("dataScr");
+	$("body").css("background","url("+ bimg +")");
+});
+
+var clickNum = 0;
+$("img.next").click(function(){
+	clickNum++;
+	if(clickNum > 3){ clickNum = 3}
+	$(".scroll ul").animate({left:-656*clickNum},500);
+});
+$("img.prev").click(function(){
+	clickNum--;
+	if(clickNum < 0){ clickNum = 0}
+	$(".scroll ul").animate({left:-656*clickNum},500);
+});
+</script>
+
+</body>
+</html>
