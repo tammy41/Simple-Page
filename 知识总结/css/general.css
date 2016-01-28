@@ -1,0 +1,19 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin:0; padding:0}
+body{background:url(../images/background.jpg); font-weight:100;}
+#_border{ width:96%; background-color:#FFF; position:absolute; top:20px; left:2%; filter: alpha(opacity=60); -moz-opacity: 0.6; opacity: 0.6;}
+
+.right_body{width: 90%;position: absolute;top: 30px;left: 5%;z-index: 2;}
+
+.bookmark{width:210px; background-color:#333; float:left; margin:10px;}
+.bookmark .bookmark_title{width:200px; margin:5px auto 0 auto; height:35px; line-height:35px; text-align:center; background-color:#F99; border-bottom: 2px solid #FFF; color:#FFF; font-size:18px; font-weight:bold;}
+.bookmark .bookmark_body{ margin-bottom:5px;}
+.bookmark .bookmark_body ul{list-style-type:none;}
+.bookmark_body ul li a{ padding-left:10px; display:block; width:190px; margin:0 auto; height:30px; line-height:30px; color:#444; background-color:#FCC; text-decoration:none; font-family:Georgia, "Times New Roman", Times, serif;}
+.bookmark_body ul li a:hover{background-color:#F96; color:#FFF;}
+.centert{ position:absolute; left:260px; margin-top:10px; width:75%;}
+.centert h1{color:#F33;}
+.centert h2{color:#222;}
+span .sign{color:#09C;}
+p,pre{ font-size:16px; font-family:"Courier New", Courier, monospace;}
