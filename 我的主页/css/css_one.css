@@ -1,0 +1,224 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin:0 auto;
+	padding:0;
+}
+body{
+	background:url(../images/background.jpg);
+}
+#wrapper{
+	min-width:1300px;
+}
+.title_img{
+	background:url(../images/title_20.jpg);
+	background-size:100% 100%;
+	height:240px;
+	padding-left:50px;
+}
+.img_logo{
+	float:left;
+	height:50px;
+	width:70px;
+}
+.banner-set {
+	position:relative;
+	float: right;
+	margin-right: 2%;
+	color:#FFF;
+}
+.banner-set ul li {
+	float: left;
+	display: block;
+	padding: 200px 30px 0px 10px;
+	width: auto;
+}
+#nav ul{
+	height:40px;
+	background-color:#FAF;
+	list-style-type:none;
+	padding-left:300px;
+}
+#nav ul li.mu a{	
+	background:url(../images/nav_blue.jpg);
+	background-size:150px 40px;height:40px;width:146px;/*图片缩放*/
+	filter:alpha(opacity=80); -moz-opacity:0.8; opacity:0.8;
+	float:left;
+	width:150px;
+	height:40px;
+	display:inline;
+	text-align:center;
+	line-height:36px;
+	font-weight:bold;
+	font-family:Georgia, "Times New Roman", Times, serif;
+}
+a:link{
+	color:#000;
+	text-decoration:none;
+}
+.banner-set a:hover{
+	text-decoration:underline;
+	color:#000;
+}
+
+#left_module{
+	margin-top:10px;
+	margin-left:10%;
+	width:300px;
+	float:left;
+}
+.total ul{ height:112px; background-color:#333;}
+.total ul li{ list-style-type:none; float:left;}
+.total ul li a{
+	margin:20px 0 20px 20px;
+	border:1px solid #999;
+	width:70px;
+	height:70px;
+	line-height:70px;
+	text-align:center;
+	list-style-type:none;
+	float:left;
+}
+.total ul li a:hover{
+	background-color:#F99;
+	font-size:24px;
+}
+
+.inner,.thumbnail{
+	margin-top:20px;
+	background-color:#333;
+	color:#FFF;
+}
+.hd{
+	font-size:24px;
+	margin-left:10px;
+	height:45px;
+	line-height:45px;
+}	
+.hd a:hover{
+	color:#F99;
+	text-decoration:underline;
+}
+.bd{
+	width:280px;
+	margin:0 auto;
+}
+.self li{
+	height:40px;
+	line-height:40px;
+	border-top:1px solid #222;
+	padding-left:10px;
+	list-style-type:none;
+}
+
+.thumbnail table{
+	border:1px solid #333;
+}
+.thumbnail th{
+	height:30px;
+}
+.head_photo{
+	width:96px;
+	height:96px;
+}
+.thumbnail td a{
+	height:30px;
+	color:#FFF;
+	text-decoration:none;
+}
+#more a{
+	height:35px;
+	line-height:35px;
+	padding-left:10px;
+}
+
+.total ul li a:link,.self th a:link,.hd a:link,#more a:link,#massage_title a:link{
+	color:#FFF;
+	text-decoration:none;
+}
+
+
+#right_module{
+	width:720px;
+	float:left;
+	margin-left:50px;
+	padding:10px;
+}
+#my_image{
+	height:45px;
+	line-height:45px;
+	color:#FFF;
+	text-align:center;
+	font-size:24px;
+	background-color:#333;
+}
+#my_image_box{
+	padding:10px;
+	background-color:#333;
+	border-top:1px solid #222;
+}
+#my_image_box ul li{ list-style-type:none;}
+#my_image_box ul li p{ text-indent:32px; line-height:24px; color:#FFF; padding:10px 10px 0 10px;}
+
+#massage_board{
+	margin-top:20px;
+	background-color:#333;
+}
+#massage_title{ font-size:24px; height:40px; line-height:40px; padding:0 20px;}
+#massage_add{ margin-left:20px;}
+.edit{
+	padding:10px;
+	width:90%;
+	min-height:80px;
+	border:2px solid #FFF;
+	color:#FFF;
+}
+.btn{
+	width:90%;
+	height:40px;
+	padding:10px;
+	position:relative;
+}
+.btn span{
+	display:block;/*块级元素*/
+	width:80px;
+	height:30px;
+	line-height:30px;
+	text-align:center;
+	font-weight:bold;
+	color:#FFF;
+	background-color:#F96;
+	margin-left:86%;
+	margin-top:-20px;
+	border-radius:5px;
+	box-shadow:1px 1px 3px #FFF;
+	cursor:pointer;
+}
+#massage_board .btn .face{
+	padding:10px;
+	background-color:#FFF;
+	width:300px;
+	height:100px;
+	border:1px solid #F99;
+	position:absolute;
+	top:30px;
+	left:30px;
+	display:none;
+}
+#massage_body{ margin: 0 auto;}
+#massage_body .msgBox{ width:90%; padding:10px; border-bottom:1px solid #222; margin-bottom:10px;}
+#massage_body .msgBox dl{ height:50px; border-bottom:1px dotted #222;}
+#massage_body .msgBox dl dt{width:40px; height:40px; float:left; margin-left:20px;}
+#massage_body .msgBox dl dd{ width:80%; height:40px; color:#FFF; font-size:20px; line-height:40px; float:right; margin-right:30px;}
+#massage_body .msgBox dt img{width:40px; height:40px; border-radius:40px;}
+.con{color:#FFF; padding:10px;}
+
+#footer{
+	clear:left;
+	background: #F4FaFb;
+	border: 1px solid #BBDDE5;
+	padding: 15px;
+	text-align: center;
+	margin:0 auto;
+	filter:alpha(opacity=40); -moz-opacity:0.4; opacity:0.4;
+}
