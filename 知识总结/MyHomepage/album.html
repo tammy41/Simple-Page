@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" onselecstart='return flase'><!--禁止复制-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link type="text/css" href="css/my_photo.css" rel="stylesheet"/>
+<title>我的相册</title>
+
+</head>
+
+<body>
+<div class="pic">
+	<img src="images/1.jpg" />
+    <img src="images/2.jpg" />
+    <img src="images/3.jpg" />
+    <img src="images/4.jpg" />
+    <img src="images/5.jpg" />
+    <img src="images/6.jpg" />
+    <img src="images/7.jpg" />
+    <img src="images/8.jpg" />
+    <img src="images/9.jpg" />
+    <img src="images/10.jpg" />
+    <img src="images/11.jpg" />	
+    <img src="images/8.jpg" />
+    <img src="images/9.jpg" />
+    <img src="images/10.jpg" />
+    <img src="images/11.jpg" />	
+    <p></p>
+</div>
+
+<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript">
+$(function(){
+	var imgL = $('div.pic img').size();
+	var deg = 360/imgL;
+	var roY = 0,roX = -10;
+	var xN = 0;
+	var yN = 0;
+	var paly = null;
+	$('div.pic img').each(function(i) {
+		$(this).mousedown(function(){
+			$(this).css({
+			'transform':'rotateY('+i*deg+'deg) translateZ(400px)'
+			});
+		});
+		$(this).attr('ondragstart','return flase');//禁止拖拽
+    });
+	$(document).mousedown(function(ev){
+		clearInterval(play);
+		var x_ = ev.clientX;
+		var y_ = ev.clientY;
+		$(this).bind('mousemove',function(ev){
+			var x = ev.clientX;
+			var y = ev.clientY;//鼠标当前位置
+			xN = x - x_;
+			yN = y - y_;//最后一次两点的距离差
+			roY += xN*0.2;
+			roX -= yN*0.1;
+			$('div.pic').css({
+				transform:'perspective(800px) rotateX('+roX+'deg) rotateY('+roY+'deg)'
+			})
+			x_ = ev.clientX;
+			y_ = ev.clientY;//上一个点的位置
+		});
+	}).mouseup(function(){
+		$(this).unbind('mousemove');
+		play = setInterval(function(){
+			xN *= 0.95;
+			yN *= 0.95;
+			if(Math.abs(xN) < 1 &&　Math.abs(yN) < 1){
+				clearInterval(play);
+			}
+			roY += xN*0.2;
+			roX -= yN*0.1;
+			$('div.pic').css({transform:'perspective(800px) rotateX('+roX+'deg) rotateY('+roY+'deg)'})
+		},30);
+	});
+});
+</script>
+
+</body>
+</html>
