@@ -1,0 +1,225 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="css/general.css" type="text/css" rel="stylesheet" />
+<style>
+tr:nth-of-type(even){ background: #FFF;}
+.list-div {width: 97%;background: #EEF8F9;}
+.list-div table { width: 100%;border: 1px solid #80BDCB;border-spacing:0;}
+.list-div th {line-height: 24px;white-space: nowrap;background-color:#BBDDE5;}
+.list-div td {text-indent:1em;font-size:14px;line-height: 22px;}
+.list-div td, .list-div th{border: 1px solid #DDEEF2;padding: 4px;}
+#_border{ height:3600px;}
+</style>
+<title>表单</title>
+</head>
+
+<body>
+<div id="_border"></div>
+<div class="right_body">
+    <div class="bookmark">
+        <div class="bookmark_title">书签</div>
+        <div class="bookmark_body">
+            <ul>
+                <li><a href="#one">1、表单</a></li>
+                <li><a href="#two">2、lable</a></li>
+                <li><a href="#three">3、input标签</a></li>
+                <li><a href="#four">4、单行文本框</a></li>
+                <li><a href="#five">5、密码域</a></li>
+                <li><a href="#six">6、单选按钮</a></li>
+                <li><a href="#seven">7、复选框</a></li>
+                <li><a href="#eight">8、文件域</a></li>
+                <li><a href="#nine">9、隐藏域隐藏标签</a></li>
+                <li><a href="#ten">10、按钮标签</a></li>
+                <li><a href="#eleven">11、提交</a></li>
+                <li><a href="#twelve">12、重置</a></li>
+                <li><a href="#thirteen">13、下拉列表</a></li>
+                <li><a href="#fourteen">14、文本域</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="centert">
+        <h1>表单</h1><br /><br />
+        
+        <h2><a name="one"></a>1、表单</h2><br />
+        <p>表单是一个包含表单元素的区域，用于搜集不同类型的用户输入，表单使用表单标签&lt;form&gt;定义。<br />
+        语法：
+        <pre>
+            &lt;form action="form_action.asp" method="get"&gt;
+                 &lt;p&gt;First name: &lt;input type="text" name="fname" /&gt;&lt;/p&gt;
+                 &lt;p&gt;Last name: &lt;input type="text" name="lname" /&gt;&lt;/p&gt; 
+                &lt;input type="submit" value="Submit" /&gt;
+             &lt;/form&gt;
+         </pre>
+        </p>
+        <div class="list-div">
+            <table border="1">
+                <tr>
+                    <th width="20%">属性</th>
+                    <th width="40%">值</th>
+                    <th width="30%">描述</th>
+                </tr>
+                <tr>
+                    <td>name</td>
+                    <td>form name</td>
+                    <td>规定表单的名称</td>
+                </tr>
+                <tr>
+                    <td>action</td>
+                    <td>URL</td>
+                    <td>规定当提交表单时向何处发送表单数据</td>
+                </tr>
+                <tr>
+                    <td>enctype</td>
+                    <td>application/x-www-form-urlencoded<br />&nbsp;multipart/form-data<br />&nbsp;text/plain</td>
+                    <td>规定在发送表单数据之前如何对其进行编码</td>
+                </tr>
+                <tr>
+                    <td>method</td>
+                    <td>get,spost</td>
+                    <td>规定用于发送 form-data 的 HTTP 方法</td>
+                </tr>
+                <tr>
+                    <td>target</td>
+                    <td>_bank,_self,_parent,_top,framename</td>
+                    <td>规定在何处打开 action URL</td>
+                </tr>
+            </table>
+        </div>
+        <br /><br />
+        
+        <h2><a name="two"></a>2、label</h2><br />
+        <p>&lt;label&gt; 标签为 input 元素定义标注（标记）；label 元素不会向用户呈现任何特殊效果。不过，它为鼠标用户改进了可用性。如果您在 label 元素内点击文本，就会触发此控件。<br /><br />
+        就是说，当用户选择该标签时，浏览器就会自动将焦点转到和标签相关的表单控件上&lt;label&gt; 标签的 for 属性应当与相关元素的id相同。
+        <pre>
+        &lt;form&gt;
+          &lt;label for="nan"&gt;男&lt;/label&gt;
+          &lt;input type="radio" name="sex" id="nan" /&gt;&lt;br /&gt;
+          &lt;label for="nv"&gt;女&lt;/label&gt;
+          &lt;input type="radio" name="sex" id="nv" /&gt;&lt;br /&gt;
+          &lt;label for="xq"&gt;篮球&lt;/label&gt;
+          &lt;input type="checkbox" id="xq"/&gt; 
+        &lt;/form&gt;
+        </pre>
+        </p><br /><br />
+        
+        <h2><a name="three"></a>3、input标签</h2><br />
+        <p>&lt;input&gt; 用于搜集用户信息。<br />
+		根据不同的 type 属性值，输入字段拥有很多种形式。输入字段可以是文本字段、复选框、掩码后的文本控件、单选按钮、按钮等等</p>
+        <div class="list-div">
+        	<table border="1">
+            	<tr>
+                	<th width="20%">属性</th>
+                    <th width="40%">值</th>
+                    <th width="30%">描述</th>
+                </tr>
+                <tr>
+                	<td>name</td>
+                    <td>field_name</td>
+                    <td>定义 input 元素的名称</td>
+                </tr>
+                <tr>
+                	<td>maxlength</td>
+                    <td>number</td>
+                    <td>规定输入字段中的字符的最大长度</td>
+                </tr>
+                <tr>
+                	<td>readonly</td>
+                    <td>readonly</td>
+                    <td>规定输入字段为只读</td>
+                </tr>
+                <tr>
+                	<td>type</td>
+                    <td>button&nbsp;&nbsp;&nbsp;file&nbsp;&nbsp;&nbsp;text&nbsp;&nbsp;&nbsp;image<br />&nbsp;hidden&nbsp;&nbsp;&nbsp;password&nbsp;&nbsp;&nbsp;checkbox<br />&nbsp;submit&nbsp;&nbsp;&nbsp;radio&nbsp;&nbsp;&nbsp;reset</td>
+                    <td>规定 input 元素的类型</td>
+                </tr>
+                <tr>
+                	<td>value</td>
+                    <td>value</td>
+                    <td>规定 input 元素的值</td>
+                </tr>
+            </table>
+        </div><br /><br />
+        
+        <h2><a name="four"></a>4、单行文本框</h2><br />
+        <p>语法：<br />
+    	&lt;input type="text" name="自定义名字"&gt;</p><br /><br />
+        
+        <h2><a name="five"></a>5、密码域</h2><br />
+        <p>&lt;input type="password" name="自定义名字"&gt;</p><br /><br />
+        
+        <h2><a name="six"></a>6、单选按钮</h2><br />
+        <p>&lt;input  type="radio"checked name="自定义名字" value="提交给后台的值"&gt;<br />
+		注意：checked设置为默认选中,有多个按钮时，所有按钮的name必须相同。</p><br /><br />
+        
+        <h2><a name="seven"></a>7、复选框</h2><br />
+        <p>语法：<br />
+        &lt;input type="checkbox"name="自定义名字" value="传给后台的值" checked&gt;<br />
+        注意：name值必须一样，checked设置为默认选中,也可不设置</p><br /><br />
+        
+        <h2><a name="eight"></a>8、文件域</h2><br />
+        <p>文件域表单由一个文本域和一个按钮组成，单击按钮后会激活一个文件选择对话框，从本地磁盘中选择一个文件，被选中文件的路径极文件名自动填写在文本域中。上传文件时，需要用到文件域。<br /><br />
+		语法：<br />
+        &lt;input name="doc" type="file" id="doc" value="c:\my1.txt"/&gt; <br /><br />
+        文件域用&lt;input&gt;标记实现，type="file"表示这是一个文件域表单元素。id和name属性均为文件域的名字，value属性为被选中文件的路径及文件名。
+        由于多选按钮本身比较小，因此出于用户体验的考虑，通常点击选项的文本就应该代表着选择对应的checkbox项，可通过label的for属性关联checkbox的id达到此目的。<br /><br />  
+        例如：<br />
+        &lt;input type="checkbox"name="interest"id="interest" value="传给后台的值" checked&gt;&lt;label for="interest"&gt;写程序&lt;/label&gt;<br /><br />
+        这样，当点击"写程序"这个label的时候，就会触发checkbox的选中<br />
+        注意：&lt;label> 标签的 for 属性应当与相关元素的 id 属性相同</p><br /><br />
+        
+        <h2><a name="nine"></a>9、隐藏域隐藏标签</h2><br />
+        <p>列表表单元素预先把一组可供选择的数据存储在列表中，以下拉菜单或列表的形式供用户在其中选择，其中name是选项的提示文字，value才是选项的值。<br /><br />
+        语法：<br />
+        &lt;input name="自定义名字" type="hidden" id="自定义id" value="自定义值"/&gt;</p><br /><br />
+        
+        <h2><a name="ten"></a>10、按钮标签</h2><br />
+        <p>语法：<br />
+        &lt;input type="button" value="自定义显示内容"&gt;（推荐使用）<br />
+        或者：<br /><br />
+        &lt;button type="button"&gt;自定义显示内容&lt;/button&gt;（不推荐使用）<br /><br />
+        注意： form表单元素中的按钮，使用input（type=button)，form之外的按钮可用button，否则会自动提交<br />
+        （可以理解为在form中的button默认的type是submit）</p><br /><br />
+        
+        <h2><a name="eleven"></a>11、提交</h2><br />
+        <p>语法：
+        <pre>
+        &lt;form&gt;
+            &lt;input name="submit" type="submit" value="提交"&gt;
+        &lt;/form&gt;</pre></p><br /><br />
+        
+        <h2><a name="twelve"></a>12、重置</h2><br />
+        <p><pre>
+        &lt;form&gt;
+            &lt;input name="reset" type="reset" value="重置"&gt;
+        &lt;/form&gt;</pre></p><br /><br />
+        
+        <h2><a name="thirteen"></a>13、下拉列表</h2><br />
+        <p>语法：
+        <pre>
+        &lt;select   name="fruit"&gt;
+            &lt;option value="apple"&gt;苹果&lt;/option&gt; 	
+            &lt;option value="pear"&gt;梨子&lt;/option&gt;
+            &lt;option value="banana"&gt;香蕉&lt;/option&gt; 
+            &lt;option value="peach"&gt;桃子&lt;/option&gt;
+         &lt;/select&gt;
+         </pre>
+        </p><br /><br />
+        
+        <h2><a name="fourteen"></a>14、文本域</h2><br />
+        <p>&lt;textarea&gt; 定义多行的文本输入控件，文本区中可容纳无限数量的文本，其中的文本的默认字体是等宽字体。通过rows和cols属性设置大小。<br /><br />
+        语法：
+        <pre>
+        &lt;textarea rows="3" cols="20"&gt;
+            …
+            文本内容
+            …
+        &lt;/textarea&gt;
+        </pre>
+        </p><br /><br />
+        
+    </div>
+</div>
+</body>
+</html>
