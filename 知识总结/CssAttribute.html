@@ -1,0 +1,280 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>CSS属性</title>
+<style>
+body{ background:url(images/title_3.jpg) no-repeat;background-attachment:fixed; background-size:100%; font-family:"Courier New", Courier, monospace;}
+h1{ color:#F33;}
+h2{ color:#F99;}
+p{ margin-left:40px;}
+.transparent{ position:absolute; left:3%; top:5%; width:94%; height:3000px; background-color:#FFF; filter: alpha(opacity=70); -moz-opacity: 0.7; opacity: 0.7; border:1px solid #9CF; }
+.css_content{ position:absolute; left:6%; top:7%; width:90%; z-index:2;}
+.attribute_table{ margin-left:4%; width:90%; border-spacing:0; border:1px solid #FAF;}
+.attribute_table th{ background-color:#F96; height:26px; padding-left:10px;}
+.attribute_table td{ height:24px; padding-left:10px; background-color:#FEF;}
+.attribute_table td,.attribute_table th{ border:1px solid #FFD1FF;}
+pre{ font-family:"Courier New", Courier, monospace; margin-left:50px;}
+</style>
+</head>
+
+<body>
+<div class="transparent"></div>
+<div class="css_content">
+<h1>CSS常用属性</h1>
+
+<h2>CSS背景</h2>
+<table border="1" class="attribute_table">
+	<tr>
+   	  <th width="40%">属性</th>
+      <th width="60%">描述</th>
+    </tr>
+    <tr>
+    	<td>backgroung</td>
+        <td>简写属性，作用是将背景属性设置在一个声明中</td>
+    </tr>
+    <tr>
+    	<td>background-attachment</td>
+        <td>背景图像是否固定或者随着页面的其余部分滚动</td>
+    </tr>
+    <tr>
+    	<td>background-color</td>
+        <td>设置元素的背景颜色</td>
+    </tr>
+    <tr>
+    	<td>background-position</td>
+        <td>设置背景图像的起始位置</td>
+    </tr>
+    <tr>
+    	<td>background-image</td>
+        <td>把图像设置为背景</td>
+    </tr>
+    <tr>
+    	<td>background-repeat</td>
+        <td>设置背景图像是否及如何重复</td>
+    </tr>
+</table><br />
+<p>background-repeat 属性设置是否及如何重复背景图像。
+默认地，背景图像在水平和垂直方向上重复。</p>
+<table border="1" class="attribute_table">
+	<tr>
+    	<th width="40%">值</th>
+        <th width="60%">描述</th>
+    </tr>
+    <tr>
+    	<td>repeat</td>
+        <td>默认。背景图像将在垂直方向和水平方向重复</td>
+    </tr>
+    <tr>
+    	<td>repeat-x</td>
+        <td>背景图像将在水平方向重复</td>
+    </tr>
+    <tr>
+    	<td>repeat-y</td>
+        <td>背景图像将在垂直方向重复</td>
+    </tr>
+    <tr>
+    	<td>no-repeat</td>
+        <td>背景图像将仅显示一次</td>
+    </tr>	
+</table><br />
+<p>background-position规定背景图片的位置<br />
+示例：
+<pre>
+body 
+{
+    background-image:url('bgimage.gif'); 
+    background-repeat:no-repeat; 
+    background-attachment:fixed; 
+    background-position:center; 
+}
+</pre>
+</p>
+<table border="1" class="attribute_table">
+	<tr>
+    	<th width="40%">值</th>
+        <th width="60%">描述</th>
+    </tr>
+    <tr>
+    	<td>top&nbsp;left&nbsp;&nbsp;&nbsp;
+            top&nbsp;center<br />
+            top&nbsp;right&nbsp;&nbsp;&nbsp;
+            center&nbsp;left<br />
+            center&nbsp;center&nbsp;&nbsp;&nbsp;
+            center&nbsp;right<br />
+            bottom&nbsp;left&nbsp;&nbsp;&nbsp;
+            bottom&nbsp;center<br />
+            bottom&nbsp;right</td>
+        <td>如果您仅规定了一个关键词，那么第二个值将是"center"。<br />默认值：0% 0%</td>
+    </tr>
+    <tr>
+    	<td>x%&nbsp;y%</td>
+        <td>第一个值是水平位置，第二个值是垂直位置。<br />
+        左上角是 0% 0%。右下角是 100% 100%。<br />
+        如果您仅规定了一个值，另一个值将是 50%</td>
+    </tr>
+    <tr>
+    	<td>xpos ypos</td>
+        <td>第一个值是水平位置，第二个值是垂直位置。<br />
+            左上角是 0 0。单位是像素 (0px 0px) 或任何其他的CSS单位。<br />
+            如果您仅规定了一个值，另一个值将是50%。<br />
+            您可以混合使用 % 和 position 值。</td>
+    </tr>
+</table><br /><br />
+
+
+<h2>CSS控制文本</h2>
+<p>CSS 文本属性可定义文本的外观。<br />
+通过文本属性，可以改变文本的颜色、字符间距，对齐文本，装饰文本，对文本进行缩进，等等</p>
+<table border="1" class="attribute_table">
+	<tr>
+    	<th width="30%">属性</th>
+        <th width="30%">描述</th>
+        <th width="40%">示例</th>
+    </tr>
+    <tr>
+    	<td>color</td>
+        <td>设置文本颜色</td>
+        <td>背景&lt;background-color&gt;</td>
+    </tr>
+    <tr>
+    	<td>letter-spacing</td>
+        <td>设置字符间距</td>
+        <td>&lt;letter-spacing:20px;letter-spacing:-0.5em&gt;</td>
+    </tr>
+    <tr>
+    	<td>line-height</td>
+        <td>设置行高</td>
+        <td>&lt;line-height:30px;line-height:200%px;line-height:2;&gt;</td>
+    </tr>
+    <tr>
+    	<td>text-align</td>
+        <td>对齐元素中的文本</td>
+        <td>Text-align:center/left/right</td>
+    </tr>
+</table>
+<p>注：16px=1em</p><br />
+<p>text-decoration 属性规定添加到文本的修饰</p>
+<table border="1" class="attribute_table">
+	<tr>
+    	<th width="40%">值</th>
+        <th width="60%">描述</th>
+    </tr>
+    <tr>
+    	<td>none</td>
+        <td>默认。定义标准的文本</td>
+    </tr>
+    <tr>
+    	<td>underline</td>
+        <td>定义文本下的一条线</td>
+    </tr>
+    <tr>
+    	<td>overline</td>
+        <td>定义文本上的一条线</td>
+    </tr>
+    <tr>
+    	<td>line-through</td>
+        <td>定义穿过文本下的一条线</td>
+    </tr>
+</table><br />
+
+<p>text-indent 属性规定文本块中首行文本的缩进</p>
+<table border="1" class="attribute_table">
+	<tr>
+    	<th>值</th>
+        <th>描述</th>
+    </tr>
+    <tr>
+    	<td>length</td>
+        <td>定义固定的缩进。默认值：0</td>
+    </tr>
+    <tr>
+    	<td>%</td>
+        <td>定义基于父元素宽度的百分比的缩进</td>
+    </tr>
+</table><br />
+
+<p>text-transform 属性控制文本的大小写</p>
+<table border="1" class="attribute_table">
+	<tr>
+    	<th width="40%">值</th>
+        <th width="60%">描述</th>
+    </tr>
+    <tr>
+    	<td>none</td>
+        <td>默认。定义带有小写字母和大写字母的标准的文本</td>
+    </tr>
+    <tr>
+    	<td>capitalize</td>
+        <td>文本中的每个单词以大写字母开头</td>
+    </tr>
+    <tr>
+    	<td>uppercase</td>
+        <td>定义仅有大写字母</td>
+    </tr>
+    <tr>
+    	<td>lowercase</td>
+        <td>定义无大写字母，仅有小写字母</td>
+    </tr>
+</table><br /><br />
+
+<h2>CSS控制字体</h2>
+<p>CSS 字体属性定义文本的字体系列、大小、加粗、风格（如斜体）和变形（如小型大写字母）。</p>
+<table border="1" class="attribute_table">
+	<tr>
+    	<th width="40%">属性</th>
+        <th width="60%">描述</th>
+    </tr>
+    <tr>
+    	<td>font-family</td>
+        <td>设置字体系列</td>
+    </tr>
+    <tr>
+    	<td>font-size</td>
+        <td>设置字体的尺寸</td>
+    </tr>
+    <tr>
+    	<td>font-style</td>
+        <td>设置字体的风格。（normal（标准字体）/italic（斜体）/oblique（倾斜字体样式））</td>
+    </tr>
+    <tr>
+    	<td>font-weight</td>
+        <td>设置文本的粗细。（normal/bold/bolder/lighter/100-900）</td>
+    </tr>
+</table><br /><br />
+
+<h2>CSS控制表格样式</h2>
+<p>CSS 表格属性可以极大的改善表格的外观，如表格边框、高度与宽度等。</p>
+<table border="1" class="attribute_table">
+	<tr>
+    	<th width="40%"></th>
+        <th width="60%"></th>
+    </tr>
+    <tr>
+    	<td>border</td>
+        <td>表格边框</td>
+    </tr>
+    <tr>
+    	<td>border-collapse</td>
+        <td>折叠边框</td>
+    </tr>
+    <tr>
+    	<td>width</td>
+        <td>表格的宽度</td>
+    </tr>
+    <tr>
+    	<td>height</td>
+        <td>表格的高度</td>
+    </tr>
+    <tr>
+    	<td>text-align</td>
+        <td>表格文本对齐</td>
+    </tr>
+    <tr>
+    	<td>padding</td>
+        <td>表格内边距</td>
+    </tr>
+</table>
+</div>
+</body>
+</html>

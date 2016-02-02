@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>css语法基础</title>
+<style>
+body{ background:url(images/background_css.jpg) no-repeat; background-size:100%; font-family:"Courier New", Courier, monospace;}
+h1{ color:#F33;}
+h2{ color:#F99;}
+p{ margin-left:40px;}
+.transparent{ position:absolute; left:3%; top:5%; width:94%; height:600px; background-color:#FFF; filter: alpha(opacity=70); -moz-opacity: 0.7; opacity: 0.7; border:1px solid #9CF; }
+.css_content{ position:absolute; left:6%; top:7%; width:90%; z-index:2;}
+</style>
+</head>
+
+<body>
+<div class="transparent"></div>
+<div class="css_content">
+	<h1>CSS语法基础</h1>
+    <h2>CSS选择器</h2>
+    <h3>ID选择器：</h3>
+	<p>ID 选择器可以为标有特定 ID 的 HTML 元素指定特定的样式。 根据元素ID来选择元素，具有唯一性，这意味着同一id在同一文档页面中只能出现一次</p>
+    <h3>类选择器：</h3>
+	<p>在 CSS 中，类选择器以一个点号显示类名的第一个字符不能使用数字！因为它无法在 Mozilla 或 Firefox 中起作用。</p>
+    <h3>标签选择器：</h3>
+    <p>一个完整的HTML页面是有很多不同的标签组成，而标签选择器，则是决定哪些标签采用相应的CSS样式</p><br />
+    <h2>CSS选择器的优先级</h2>
+    <p>id选择器优先级 > 类class选择器优先级 > 标签选择器优先级</p>
+</div>
+</body>
+</html>
