@@ -359,7 +359,7 @@ $("#Flower .flowerComm li").hover(function(){
 	$(this).find("p").slideUp();
 });
 
-//flower 手风琴效果
+//flower 手风琴效果 
 $("#Flower .accordion li").mousemove(function(){
 	$(this).addClass("box").siblings().removeClass("box");
 	$(this).find("h3").addClass("hover").parent().siblings("li").find("h3").removeClass("hover");
