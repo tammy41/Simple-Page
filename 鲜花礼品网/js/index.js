@@ -176,7 +176,7 @@ $(".scrollBut").mousedown(function(e){
 /*倒计时*/
 //第一个倒计时
 var endTime1=new Date();
-endTime1.setFullYear(2015);
+endTime1.setFullYear(2016);
 endTime1.setMonth(9);
 endTime1.setDate(1);
 endTime1.setHours(24);
@@ -191,7 +191,7 @@ changeTime(endTimes1,obj1);
 
 //第二个倒计时
 var endTime2=new Date();
-endTime2.setFullYear(2015);
+endTime2.setFullYear(2016);
 endTime2.setMonth(9);
 endTime2.setDate(7);
 endTime2.setHours(24);
@@ -205,7 +205,7 @@ setInterval(function(){
 changeTime(endTimes2,obj2);
 
 var endTime3=new Date();
-endTime3.setFullYear(2015);
+endTime3.setFullYear(2016);
 endTime3.setMonth(9);
 endTime3.setDate(3);
 endTime3.setHours(24);
@@ -219,7 +219,7 @@ setInterval(function(){
 changeTime(endTimes3,obj3);
 
 var endTime4=new Date();
-endTime4.setFullYear(2015);
+endTime4.setFullYear(2016);
 endTime4.setMonth(9);
 endTime4.setDate(1);
 endTime4.setHours(24);
@@ -233,7 +233,7 @@ setInterval(function(){
 changeTime(endTimes4,obj4);
 
 var endTime5=new Date();
-endTime5.setFullYear(2015);
+endTime5.setFullYear(2016);
 endTime5.setMonth(9);
 endTime5.setDate(1);
 endTime5.setHours(24);
@@ -247,7 +247,7 @@ setInterval(function(){
 changeTime(endTimes5,obj5);
 
 var endTime6=new Date();
-endTime6.setFullYear(2015);
+endTime6.setFullYear(2016);
 endTime6.setMonth(9);
 endTime6.setDate(6);
 endTime6.setHours(24);
@@ -261,7 +261,7 @@ setInterval(function(){
 changeTime(endTimes6,obj6);
 
 var endTime7=new Date();
-endTime7.setFullYear(2015);
+endTime7.setFullYear(2016);
 endTime7.setMonth(9);
 endTime7.setDate(7);
 endTime7.setHours(24);
@@ -275,7 +275,7 @@ setInterval(function(){
 changeTime(endTimes7,obj7);
 
 var endTime8=new Date();
-endTime8.setFullYear(2015);
+endTime8.setFullYear(2016);
 endTime8.setMonth(9);
 endTime8.setDate(8);
 endTime8.setHours(24);
