@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>商城</title>
+<link href="css/login.css" type="text/css" rel="stylesheet" />
+<style>
+html,body,div,input,h1{margin:0 auto; padding: 0;  font-family:"微软雅黑";}
+
+a{ text-decoration: none;}
+#logo{ width: 1200px; height: 100px; }
+#logo img{display: inline-block; position: relative; top:50%; transform: translateY(-50%);}
+#main-box{ width: 100%;  height: 560px; background: #EE3344;  }
+
+#main-box div.ad{ width: 1200px; height: 560px; background: #EE3344; }
+.login{ width: 300px; height: 330px; border: 1px solid #CCCCCC;  float: right; background: #FFFFFF; margin: 80px 60px 0 0; padding: 30px; }
+.login h1{ font-size: 24px; margin-bottom: 15px }
+.login input{ height: 37px; width: 240px; margin: 15px 0; color: #666; font-size: 18px; padding: 0 10px; }
+.login .login-btn{ height: 45px; width: 300px; border: 0; padding: 10px 15px; border-radius: 3px; cursor: pointer; font-size: 18px; -webkit-transition-duration: 0.25s; transition-duration: 0.25s; background: #C40000; color: #FFFFFF; letter-spacing: 10px;} 
+.login-links{ height: 14px; }
+.login-links a{ font-size: 12px; color: #6c6c6c; }
+.login-links a:hover{ color: #C40000; }
+.register{ float: right; }
+.user-img{ display: inline-block; width: 36px; height: 38px; }
+
+
+#footer{ margin-top: 50px; width: 1200px; height: 200px; }
+.footer-link{ height: 100px; }
+.footer-link b{ display: inline-block; padding-right: 20px; }
+.footer-link a{ color: #333333; height: 25px; display: inline-block; padding: 0 10px; font-size: 14px; }
+.footer{ width: 300px; height: 50px; margin: 20 auto; }
+</style>
+</head>
+<body>
+	<div id="logo"><img src="images/logo.png" /></div>
+	<!--login begin-->
+	<div id="main-box">
+		<div class="ad">
+			<div class="login">
+				<h1>账户登录</h1>
+				<form>
+					<div class="user-img iconfont" >&#xe68b;</div><input type="text" class="user" value="Username" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Username';}"></input>
+					<div class="user-img iconfont" >&#xe6cc;</div><input type="password" value="password" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Password';}"></input>
+					<div class="login-links">
+						<a href="#">忘记登录密码</a><a href="#" class="register">免费注册</a>
+					</div>
+					<input type="submit" class="login-btn" value="登录"></input>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!--login end-->
+	<div id="footer">
+	<!-- 友情链接 -->
+		<div class="footer-link">
+			<div>
+	        <b>友链</b><a href="http://www.chinaname.cn/" target="_blank">中华取名网</a> <a href="http://www.outlets365.com/" target="_blank">奥特莱斯</a> <a href="http://sz.fang.com/" target="_blank">深圳房产网</a> <a href="http://www.yoger.com.cn/" target="_blank">优个网</a> <a href="http://www.juooo.com" target="_blank">聚橙</a> <a href="http://www.juanpi.com" target="_blank">卷皮网</a> <a href="http://www.citsnj.com/" target="_blank">南京旅行社</a> <a href="http://www.bloves.com/" target="_blank">钻戒</a> <a href="http://www.doido.com/" target="_blank">爱度钻石</a> <a href="http://www.cnhm.net/" target="_blank">中国花木网</a> <a href="http://www.wbiao.cn" target="_blank">腕表</a> <a href="http://yy.yuanlin.com" target="_blank">园艺</a> <a href="http://www.bbhun.com" target="_blank">宝贝婚团网</a> <a href="http://www.yuanlin365.com/" target="_blank">苗木</a> <a href="http://www.huamu.cn/" target="_blank">花木网</a> <a href="http://www.zocai.com/" target="_blank">佐卡伊珠宝网</a> <a href="http://www.bloves.com/" target="_blank">钻石婚戒定制</a> <a href="http://www.spider.com.cn/" target="_blank">杂志</a> <a href="http://www.iyijiao.com/" target="_blank">中国青少年艺术教育网</a> <a href="http://www.aiuw.com/" target="_blank">装修网</a> <a href="http://www.dog126.com/" target="_blank">淘狗网</a> <a href="http://www.liwuyou.com/" target="_blank">礼无忧网</a> <a href="http://www.goupuzi.com/" target="_blank">宠物狗</a> <a href="http://www.jiyouwang.com/" target="_blank">机友网</a> <a href="http://www.cocodiy.com/" target="_blank">礼物网</a> <a href="http://zx.meilele.com/" target="_blank">装修</a>
+	        </div>
+		</div>
+		<!-- 友情链接 End -->
+	    <div class="footer">
+	    &copy;&nbsp;2015&nbsp;FlowerAndGift.com&nbsp;版权所有
+	    </div> 
+	</div>
+</body>

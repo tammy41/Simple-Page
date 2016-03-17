@@ -10,6 +10,7 @@ html,a,p,body,ul,li,ol,h3,dl,dt,dd,span,form,input,div,h4{ margin:0; padding:0; 
     url('../IconFont/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
     url('../IconFont/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
 }
+
 .nav_box{ position:fixed; top:0; left:0; z-index:10;}
 
 /*ad style*/
