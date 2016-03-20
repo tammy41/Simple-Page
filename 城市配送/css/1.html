@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	#box{
+		/*width: 500px;
+	    height: 200px;*/
+		border: 1px solid red;
+
+
+	}
+	#box::after{
+		overflow: hidden;
+		content:'';
+		clear: both;
+		display: block;
+	}
+	#pox{
+		width: 50px;
+		height: 50px;
+		background-color: blue;
+		float: left;
+	}
+	#pox2{
+		width: 50px;
+		height:70px;
+		background-color: green;
+		float: left;
+	}
+	#pox3{
+		width: 50px;
+		height:70px;
+		background-color: black;
+		float: right;
+	}
+	#pox4{
+		width: 50px;
+		height:70px;
+		background-color: #cfcfcf;
+		float: right;
+	}
+
+	</style>
+</head>
+
+<body>
+	<div id="box">
+		<div id="pox"></div>
+		<div id="pox2"></div>
+		<div id="pox3"></div>
+		<div id="pox4"></div>
+		<!-- <div style="clear: both;"></div> -->
+	</div>
+</body>
+</html>
