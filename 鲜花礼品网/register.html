@@ -3,27 +3,28 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>商城</title>
-<link href="css/login.css" type="text/css" rel="stylesheet" />
+<link href="css/register.css" type="text/css" rel="stylesheet" />
 </head>
 <body>
+<div id="body-warp">
 	<div id="logo"><a href="index.html"><img src="images/logo.png" /></a></div>
-	<!--login begin-->
 	<div id="main-box">
 		<div class="ad">
-			<div class="login">
-				<h1>账户登录</h1>
-				<form>
-					<div class="user-img iconfont" >&#xe68b;</div><input type="text" class="user" value="Username" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Username';}"></input>
-					<div class="user-img iconfont" >&#xe6cc;</div><input type="password" value="password" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Password';}"></input>
-					<div class="login-links">
-						<a href="#">忘记登录密码</a><a href="register.html" class="register">免费注册</a>
-					</div>
-					<input type="submit" class="login-btn" value="登录"></input>
-				</form>
-			</div>
+			<div class="register">
+				<h2>新用户注册</h2>
+				<div class="information">
+					<select class="country-select"></select>
+					<input value="手机号" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = '手机号码';}"></input>
+					<input value="验证码" class="security" onFocus="this.value='';" onBlur="if(this.value == '') {this.value = '';}"></input>
+					<input type="button" class="btn" value="发送验证码"></input>
+					<input type="button" class="reg-btn" value="注册"></input>
+					<input type=""></input>
+				</div>
+				<a href="login.html" class="login-btn">已有账号</a>
+			</div> 
 		</div>
 	</div>
-	<!--login end-->
+	
 	<div id="footer">
 	<!-- 友情链接 -->
 		<div class="footer-link">
@@ -36,4 +37,5 @@
 	    &copy;&nbsp;2015&nbsp;FlowerAndGift.com&nbsp;版权所有
 	    </div> 
 	</div>
+</div>
 </body>

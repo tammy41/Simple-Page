@@ -1,0 +1,32 @@
+html,body,div,ul,li{ margin:0 auto; padding: 0; }
+
+@font-face {font-family: 'iconfont';
+    src: url('../IconFont/iconfont.eot'); /* IE9*/
+    src: url('../IconFont/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../IconFont/iconfont.woff') format('woff'), /* chrome、firefox */
+    url('../IconFont/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('../IconFont/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+a{ text-decoration: none; color: #000; }
+
+#Top{ width: 100%; height: 30px; background: #EEE; font-size: 12px; min-width: 1300px;}
+#Top ul li{  list-style: none; float: right; padding-right:20px; margin: 7px 10px; border-right: 1px solid #CCC; }
+#Top .iconfont{ font-family:"iconfont" !important; font-size:16px; color:#EB4C49; font-style:normal; margin-right:10px; }
+#Top .top-index{ float: left; margin-left: 80px;  border: none; }
+#Top a:hover{ color: #C60000; }
+
+#Header{ width: 1200px; height: 100px; padding: 15px 0; }
+#Header .Logo{ height: 70px; width: 220px; float: left; }
+#Header .Search{ width: 360px; height: 70px; position: relative; padding: 15px 0; }
+.Search .sea{ width:310px; height:36px; border:1px solid #ddd; outline: none; }
+.Search .btn{ width:42px; height:40px; border:none; background:url(../images/ser_but.png);  position: absolute; left: 314px; }
+
+#box{ width:350px; height:426px; border:1px solid #000; margin:50px 300px; position: relative;}
+#box .show{ width:350px; height:356px;}
+#box .bShow{ width:300px; height:300px; position: absolute; left:360px; top:0; border:1px solid #DDD; overflow:hidden; display:none;}
+#box .bShow img{ position:absolute;}
+#box .shade{ width:350px; height:356px; position:absolute; left:0; top:0;}
+#box .sShow{ width:180px; height:160px; background:#09F; display:block; filter:alpha(opacity=30); -moz-opacity:0.3; -khtml-opacity:0.3; opacity:0.3; dispaly:block; position:absolute; left:0; top:0; display:none;}
+#box .btn{ margin:10px;}
+#box .btn img{ border:1px solid #666;}
+#box .btn img.active{ border:2px solid #F00;}
