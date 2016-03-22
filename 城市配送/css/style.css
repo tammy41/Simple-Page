@@ -27,7 +27,7 @@ a,a:hover{
 	background:rgb(247,247,247);
 }
 #top{
-	width:1200px; 
+	max-width:1200px; 
 	height:35px;
 	margin:0 auto;
 	background:rgb(247,247,247);
@@ -98,85 +98,105 @@ a,a:hover{
 
 /****网站头部headerWrap***/
 #headerWrap{
-	margin-bottom: 10px;
+	margin-bottom: 6px;
 	width: 100%;
-	height: 58px;
-	background: linear-gradient(to bottom,#BFE4E8,#FFFFFF);
-	box-shadow: 0 -1px 2px rgba(0,0,0,.25),inset 0 1px 0 rgba(255,255,255,.15);
-
+	height: 151px;
+	/*background: linear-gradient(to bottom,#BFE4E8,#FFFFFF);*/
+	/*box-shadow: 0 -1px 2px rgba(0,0,0,.25),inset 0 1px 0 rgba(255,255,255,.15);*/
+	background: url(../images/header.jpg) no-repeat;
+	background-size:100% 100%;
+	/*overflow: hidden;*/
 }
 #headerWrap .header{
-	width: 1200px;
+	max-width: 1200px;
 	
 	margin: 0 auto;
 	
 }
 #headerWrap .header .left{
 	width: 300px;
-	padding-top: 5px;
+	padding-top: 46px;
 	float: left;
 	
 }
 #headerWrap .header .right{
+	padding-top: 54px;
 	width: 360px;
 	margin-left: 134px;
 	float: left;
 }
-#headerWrap .header .right form{
-	padding-top:12px;
-}
+
 #headerWrap .header .right form .form-right{
 	margin-left: 260px;
 
 }
 #headerWrap .header .register{
 	float: right;
-	padding-top: 12px;
+	padding-top: 54px;
 }
 
 /***网站nav部分****/
-#nav{ 
-	width:1200px;
-	height:49px; 
-	margin:0 auto;}
-#nav ul{
-    position:relative;
+#head_nav{
+	width: 1200px;
+	margin: 0 auto;
 }
 
-#nav ul li.on{
-	width: 248px;
-    height: 49px;
-    line-height: 49px;
-    text-align: center;
+#h_nav_ul{
+    width: 100%;
+	border-bottom:2px solid #2677B1;
+}
+#h_nav_ul>li{
+	text-align: center;
+	float: left;
+	width: 13%;
+    height: 35px;
+    line-height: 35px;
+    background-color: #EFEFEF;
+    color:#212054;
+    margin-left: 2px;
+}
+#h_nav_ul::after{
+    display: block; content: ""; width: 0; clear: both;
+}
+#h_nav_ul>li:first-child{
+    margin-right: 2px;
+    margin-left: 0 !important;
+    width: 249px;
     background-color: #2677B1;
-    color: #F7F7F7;
+    color:#F7F7F7;
+}
+#h_nav_ul>li:first-child a{
+    color:#EFEFEF!important;
+}
+#h_nav_ul>li:first-child a:hover{
+    color: #F7F7F7!important;
+
+    background-color: #4981BD;
 }
 
-	
-#nav ul li{
-	float:left;
- 	position:relative;
-  }
-#nav ul li a{ color:#212054; 
-	display:block; 
-	width:119px; 
-	height:49px; 
-	line-height:49px;
-	background:rgb(239,239,239); 
-	text-align:center; 
+#h_nav_ul>li>a{
+    display: block;
+    width: 100%;
 }
-#nav ul li a:hover{ 
-	color:#0077D9;
-	background: #CCC;
-	}
-#nav ul .bg{ 
-	width:50px; 
-	height:3px;
-	background:red; position:absolute; 
-	top:38px; 
-	left:282px;
-	}
 
+#h_nav_ul>li>a:hover{
+background-color:#F7F7F7 ;
+}
+
+.h_sub_menu{
+    border-top:2px solid #2677B1 ;
+    outline: 1px solid #D1D1D1;
+    display: none;
+}
+.h_sub_menu>li>a{
+    display: block;
+    width: 100%;
+}
+.h_sub_menu>li>a:hover{
+    display: block;
+    width: 100%;
+    background-color: #D9EFF1;
+}
 
 /****网站bannerBlock部分***/
 #banner-block::after{
@@ -186,7 +206,7 @@ a,a:hover{
 	clear: both;
 }
 #banner-block{
-	width: 1200px;
+	max-width: 1200px;
     /* height: 800px; */
     margin: 0px auto;
     /* background-color: red; */
@@ -264,24 +284,24 @@ a,a:hover{
 	/*background: linear-gradient(to right, #D4D6DB , #FAEEEE);*/
 
 }
-#banner-block .tab-content .tab-1>ul>li {
+#banner-block .tab-content .tab-2>ul>li {
 	position: relative;
 	line-height: 22px;
 	padding-left: 6px;
 }
-#banner-block .tab-content .tab-1>ul>li>p{
+#banner-block .tab-content .tab-2>ul>li>p{
 	overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
     width: 160px;
    
 }
-#banner-block .tab-content .tab-1>ul>li>p>a{
+#banner-block .tab-content .tab-2>ul>li>p>a{
 	font-size: 12px;
     color: #6E6C6C;
 }
 
-#banner-block .tab-content .tab-1>ul>li>span{
+#banner-block .tab-content .tab-2>ul>li>span{
 	position: absolute;
     top: 0px;
     left: 170px;
@@ -690,7 +710,29 @@ a,a:hover{
     background-color: #B36B8C;
     font-size: 16px;
     padding: 10px 5px;
+  /*  animation: changebg 3s;*/
 }
+#deliveryMap .tool>h1.change{
+	animation: changebg 5s;
+}
+@keyframes changebg{
+	0%{
+		background-color:#B36B8C; 
+	}
+	25%{
+		background-color: #5E61C3;
+	}
+	50%{
+		background-color:#5EC3A7; 
+	}
+	75%{
+		background-color: #6AC332;
+	}
+	100%{
+		background-color:#B36B8C;
+	}
+}
+
 #deliveryMap .tool>ul{
 
 }
@@ -844,7 +886,7 @@ a,a:hover{
 /***footer*****/
 .footer{
 	width: 1200px;
-	margin: 24px auto;
+	margin: 10px auto;
 
 }
 .footer .footer_list{
@@ -872,4 +914,29 @@ a,a:hover{
 
 .footer .footer-bd>p>span{
 
+}
+
+
+/***elevator部分****/
+
+.elevator{
+	position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 70px;
+    background-color: #F0EEEB;
+}
+
+.elevator>a{
+	text-align: center;
+    display: block;
+    width: 70px;
+    height: 30px;
+    line-height: 30px;
+}
+.elevator>a:hover{
+	background: red;
+}
+.elevator>a>span{
+	color: #CA441C;
 }

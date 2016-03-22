@@ -10,7 +10,7 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/move.js"></script>
 	<script src="js/index.js"></script>	
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -87,32 +87,71 @@
 	</div><!--headerWrap结束-->
 		
 	<!-- nav导航 -->
-	<div id="nav">
-		<ul id="nav_ul">
-			<li class="on">政务公告</li>
-			<li><a href="">首页</a></li>
-			<li><a href="">政务公告</a></li>
-			<li><a href="">信息发布</a></li>
-			<li><a href="">物流相关</a></li>
-			<li><a href="">物流人才</a></li>
-			<li><a href="">行业数据</a></li>
-			<li><a href="">诚信认证</a></li>
-			<li><a href="">车货调度</a></li>
-			
+	<div id="head_nav">
+		<ul id="h_nav_ul">
+			<li><a href="#">首页</a></li>
+
+			<li><a href="#">政务公告</a>
+                <ul class="h_sub_menu">
+                    <li><a href="#">图文资讯</a> </li>
+                    <li><a href="#">政务公告</a></li>
+                    <li><a href="#">政策法规</a></li>
+                </ul>
+            </li>
+			<li><a href="#">在线交易</a>
+                <ul class="h_sub_menu">
+                    <li><a href="#">最新货单</a> </li>
+                    <li><a href="#">最新车源</a></li>
+                    <li><a href="#">成交订单</a></li>
+                </ul>
+            </li>
+			<li><a href="#">城配资源</a>
+                <ul class="h_sub_menu">
+                    <li><a href="#">仓储出租</a> </li>
+                    <li><a href="#">设备供应</a></li>
+                    <li><a href="#">设备需求</a></li>
+                    <li><a href="#">末端网点</a></li>
+                </ul>
+            </li>
+			<li><a href="#">物流相关</a>
+                <ul class="h_sub_menu">
+                    <li><a href="#">物流招标</a> </li>
+                    <li><a href="#">物流金融</a></li>
+                    <li><a href="#">企业招聘</a></li>
+					<li><a href="#">物流人才</a></li>
+                </ul>
+            </li>
+			<li><a href="#">物流数据</a>
+                <ul class="h_sub_menu">
+                    <li><a href="#">行业数据统计</a> </li>
+                    <li><a href="#">平台数据统计</a></li>
+                    <li><a href="#">运价指数</a></li>
+                </ul>
+            </li>
+			<li><a href="#">诚信认证</a>
+                <ul class="h_sub_menu">
+                    <li><a href="#">企业诚信排行</a> </li>
+                    <li><a href="#">诚信评价</a></li>
+
+                </ul>
+            </li>
+
 		</ul>
 	</div>
 	<!--nav结束-->
-
-
+	
 	
 	<div id="banner-block">
 		<div class="tab-content">
 			<ul>
-				<li class="active">政务公告</li>
-				<li>图文资讯</li>
+				<li class="active">图文资讯</li>
+				<li>政务公告</li>
 				<li>政策法规</li>
 			</ul>
 			<div class="tab-1 selected" style="display: block;">
+				<img src="images/pic.jpg" alt="">
+			</div>
+			<div class="tab-2">
 				<ul>
 					<li><p><a href="">国家物流平台参加第六届中日韩运</a></p><span>[2016-03-17]</span></li>
 					<li><p><a href="">国家物流平台参加第六届中日韩运</a></p><span>[2016-03-17]</span></li>
@@ -128,9 +167,7 @@
 					
 				</ul>
 			</div>
-			<div class="tab-2">
-				<img src="images/pic.jpg" alt="">
-			</div>
+
 			<div class="tab-3">
 				<img src="images/1.jpg" alt="">
 			</div>
@@ -184,31 +221,31 @@
     	</dl>
     	<dl>
     		<dd><img src="images/menu2.jpg" alt="找仓库" /></dd>
-    		<dt><a href="#">找仓库</a></dt>
-    	</dl>
-    	<dl>
-    		<dd><img src="images/menu3.jpg" alt="查菜单" /></dd>
-    		<dt><a href="#">查菜单</a></dt>
-    	</dl>
-    	<dl>
-    		<dd><img src="images/menu4.jpg" alt="凭诚信" /></dd>
-    		<dt><a href="#">凭诚信</a></dt>
-    	</dl>
-    	<dl>
-    		<dd><img src="images/menu5.jpg" alt="踩网点" /></dd>
-    		<dt><a href="#">踩网点</a></dt>
-    	</dl>
-    	<dl>
-    		<dd><img src="images/menu6.jpg" alt="清结算" /></dd>
-    		<dt><a href="#">清结算</a></dt>
-    	</dl>
-    	<dl>
-    		<dd><img src="images/menu7.jpg" alt="找运力" /></dd>
     		<dt><a href="#">找运力</a></dt>
     	</dl>
     	<dl>
+    		<dd><img src="images/menu3.jpg" alt="查菜单" /></dd>
+    		<dt><a href="#">查订单</a></dt>
+    	</dl>
+    	<dl>
+    		<dd><img src="images/menu4.jpg" alt="凭诚信" /></dd>
+    		<dt><a href="#">评诚信</a></dt>
+    	</dl>
+    	<dl>
+    		<dd><img src="images/menu5.jpg" alt="踩网点" /></dd>
+    		<dt><a href="#">找仓库</a></dt>
+    	</dl>
+    	<dl>
+    		<dd><img src="images/menu6.jpg" alt="清结算" /></dd>
+    		<dt><a href="#">找托盘</a></dt>
+    	</dl>
+    	<dl>
+    		<dd><img src="images/menu7.jpg" alt="找运力" /></dd>
+    		<dt><a href="#">找设备</a></dt>
+    	</dl>
+    	<dl>
     		<dd><img src="images/menu8.jpg" alt="租托盘" /></dd>
-    		<dt><a href="#">租托盘</a></dt>
+    		<dt><a href="#">供人才</a></dt>
     	</dl>
     </div>
 	<!---->
@@ -569,7 +606,7 @@
 
 		</div><!-- map -->
 		
-
+     
 <!-- 实用工具 -->
 	<div class="tool">
 		<h1>实用工具</h1>
@@ -832,63 +869,44 @@
     	<span>备案号：沪ICP备XXXXXX号</span>
         <span>网站制度 证照信息公示</span>
     </p>
-  </div><!-- footer-bd -->
+  	</div><!-- footer-bd -->
+  	</div><!--footer-->	
 
-</div>	
-
+	<!-- elevator 跳转 -->
+	<div id="elevator" class="elevator">
+		<a class="home">house</a>
+		<a href="#data-statistics"><span>1F</span></a>
+		<a href="#content"><span>2F</span></a>
+		<a href="#content-two"><span>3F</span></a>
+		<a href="#content-three"><span>4F</span></a>
+		<a href="#deliveryMap"><span>5F</span></a>
+		<a href="#main-job"><span>6F</span></a>
+		<a href="#partner"><span>7F</span></a>
+		<a href="#"><span>返回顶部</span></a>
+		
+	</div><!-- elevator -->
+	
+	
+  
 <script>
 
 
 
  $(function(){
 
- $('#banner-block .tab-content>ul>li').mouseover(function(){
- 	$(this).addClass('active');
- 	$('#banner-block .tab-content>ul>li').removeClass('active');
- 	$('#banner-block .tab-content>div').hide();
- 	$('#banner-block .tab-content>div').eq($(this).index()).show();
- 		
- });
 
 
 
 
 
+
+
+   
 })
-
-
 </script>
 
 
 
 </body>
 </html>
-		<!-- <div class="data-table">
-			<h2>物流数据统计</h2>
-			<ul>
-				<li><a href=""><img src="images/data3.jpg" alt=""></a></li>
-				<li><a href=""><img src="images/data3.jpg" alt=""></a></li>
-				<li><a href=""><img src="images/data3.jpg" alt=""></a></li>
-				<li><a href=""><img src="images/data3.jpg" alt=""></a></li>
-				
-			</ul>
-		</div> -->
-		<!-- data-table 结束-->
-		<!-- <div class="data-menu">
-			<ul>
-				<li><a href=""><img src="" alt="">淘货源</a></li>
-				<li><a href=""><img src="" alt="">找仓库</a></li>
-				<li><a href=""><img src="" alt="">查订单</a></li>
-				<li><a href=""><img src="" alt="">评诚信</a></li>
-				<li><a href=""><img src="" alt="">踩网点</a></li>
-				<li><a href=""><img src="" alt="">清结算</a></li>
-				<li><a href=""><img src="" alt="">找运力</a></li>
-				<li><a href=""><img src="" alt="">租托盘</a></li>
-				<li><a href=""><img src="" alt="">租设备</a></li>
-				<li><a href=""><img src="" alt="">保理财</a></li>
-				<li><a href=""><img src="" alt="">问客服</a></li>
-				<li><a href=""><img src="" alt="">供人才</a></li>
-			</ul>
-		</div> -->
-		<!-- data-menu -->
 
