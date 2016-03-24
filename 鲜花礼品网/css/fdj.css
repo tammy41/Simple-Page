@@ -21,7 +21,9 @@ a{ text-decoration: none; color: #000; }
 .Search .sea{ width:310px; height:36px; border:1px solid #ddd; outline: none; }
 .Search .btn{ width:42px; height:40px; border:none; background:url(../images/ser_but.png);  position: absolute; left: 314px; }
 
-#box{ width:350px; height:426px; border:1px solid #000; margin:50px 300px; position: relative;}
+#center{ width: 1200px; }
+
+#box{ width:350px; height:426px; border:1px solid #000; position: relative;}
 #box .show{ width:350px; height:356px;}
 #box .bShow{ width:300px; height:300px; position: absolute; left:360px; top:0; border:1px solid #DDD; overflow:hidden; display:none;}
 #box .bShow img{ position:absolute;}
