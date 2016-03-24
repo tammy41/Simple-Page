@@ -11,8 +11,6 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/common.css">
-	<link rel="stylesheet" type="text/css" href="GNDetails">
-	<link rel="stylesheet" type="text/css" href="css/StorageList.css">
 </head>
 <body>
 	<div id="main">
@@ -104,7 +102,7 @@
                     <li><a href="#">最新货单</a> </li>
                     <li><a href="#">最新车源</a></li>
                     <li><a href="#">成交订单</a></li>
-                </ul>
+                </u>
             </li>
 			<li><a href="#">城配资源</a>
                 <ul class="h_sub_menu">
@@ -273,7 +271,7 @@
 					<!--lease-table begin-->
 					<div id="lease-table">
 						<div class="table-title">仓库出租信息</div>
-						<a href="#" class="release-btn">发布出租信息</a>
+						<a href="#" class="release-btn">发布仓储出租信息</a>
 						<table>
 							<tr>
 								<th width="35%" class="first">仓储信息</th>
@@ -336,26 +334,77 @@
 								</td>
 								<td align="center" valign="middle"><a href="#" class="details">查看详情</a></td>
 							</tr>
+							<tr>
+								<td>
+									<div class="title-img"><img src="" alt="略缩图"/></div>
+									<ul class="depot-info">
+										<li class="area-info">华南城10000平仓库急租</li>
+										<li>所属区域：<font class="area">红谷滩区</font></li>
+										<li>联系人：<font class="person-name">王先生</font></li>
+										<li>联系方式：<font class="tel">12345678901</font></li>
+										<li>求租面积：<font class="acreage">100</font></li>
+									</ul>
+								</td>
+								<td>
+									<ul class="acreage-info">
+										<li>仓库面积：<font>10000000</font>m²</li>
+										<li>闲置面积：<font>10000000</font>m²</li>
+										<li>起租面积：<font>10000000</font>m²</li>
+										<li>租金价格：32.00元/ m²/月</li>
+									</ul>
+								</td>
+								<td align="center" valign="middle">
+									<a href="#" class="release-date">2016-3-14</a>
+								</td>
+								<td align="center" valign="middle">
+									20
+								</td>
+								<td align="center" valign="middle"><a href="#" class="details">查看详情</a></td>
+							</tr>
+							<tr>
+								<td>
+									<div class="title-img"><img src="" alt="略缩图"/></div>
+									<ul class="depot-info">
+										<li class="area-info">华南城10000平仓库急租</li>
+										<li>所属区域：<font class="area">红谷滩区</font></li>
+										<li>联系人：<font class="person-name">王先生</font></li>
+										<li>联系方式：<font class="tel">12345678901</font></li>
+										<li>求租面积：<font class="acreage">100</font></li>
+									</ul>
+								</td>
+								<td>
+									<ul class="acreage-info">
+										<li>仓库面积：<font>10000000</font>m²</li>
+										<li>闲置面积：<font>10000000</font>m²</li>
+										<li>起租面积：<font>10000000</font>m²</li>
+										<li>租金价格：32.00元/ m²/月</li>
+									</ul>
+								</td>
+								<td align="center" valign="middle">
+									<a href="#" class="release-date">2016-3-14</a>
+								</td>
+								<td align="center" valign="middle">
+									20
+								</td>
+								<td align="center" valign="middle"><a href="#" class="details">查看详情</a></td>
+							</tr>
 						</table>
 					</div>
 					<!--lease-table end-->
 					<!-- 分页 -->
 					<div id="turn-page">
 					    <div class="record">
-							第<span class="pageCurrent num">1</span>/<span class="num">2</span>页,
-							每页<span class="totalRecords num">20</span>条
+							第<span class="pageCurrent num" id="now-page">1</span>/<span class="all-page num" id="all-page">2</span>页,
+							每页<span class="totalRecords num">10</span>条
 					    </div>
-						<span id="page-link">
-						    <a href="#">第一页</a>
-						    <a href="#">上一页</a>
-						    <a href="#">下一页</a>
-						    <a href="#">最末页</a>
-						    <select id="gotoPage" onchange="listTable.gotoPage(this.value)">
-						    <option value='1'>1</option>
-						    <option value='2'>2</option>          
-						    </select>
-						    <input type="button" value="跳转到" class="page-tum"></input>
+					    <span class="page-btnLink">
+							<input type="text" value="1" id="page-tum"></input>
+							<input type="button" value="跳转到" id="page-btn"></input>
 						</span>
+						<span id="page-link">
+						</span>
+						
+						
 					</div>    
 				</div>
 			</div>
@@ -480,9 +529,17 @@
 	   var MyMar = setInterval(Marquee,speed);
 	   tab.onmouseover = function(){ clearInterval(MyMar)};//清除循环
 	   tab.onmouseout =  function(){MyMar = setInterval(Marquee,speed)}; //恢复循环
+	   page({
+				id : 'page-link',
+				nowPage :1,//当前页
+				allPage : 10,//总页数
+				callBack : function(now,all){
+					
+				}
+			});
    };
-
+   
 </script>
-	
+<script type="text/javascript" src="js/paging.js"></script>
 </body>
 </html>
