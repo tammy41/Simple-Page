@@ -12,6 +12,13 @@
 	<script src="js/index.js"></script>	
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css">
+	<style>
+		.data-img div{
+			display: inline-block;
+
+		}
+	</style>
+	
 </head>
 <body>
 	<div id="main">
@@ -54,25 +61,20 @@
  					</div>
 			</div><!--register结束-->
 
-
+					<div class="select_option">
+						<select name="" id="">
+				               	<option value="" selected="selected">淘货源</option>
+				               	<option value="">选车辆</option>
+				               	<option value="">找仓库</option>
+				               	<option value="">查订单</option>
+				               	<option value="">搜资讯</option>
+						</select>
+					</div>
 			<div class="right">
 				<form class="form-inline hidden-xs" role="form" action="">
 					<div class="form-group">
 				 		<div class="input-group">
-						 	<div class="input-group-btn">
-				                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-				                     淘货源 
-				                     <span class="caret"></span>
-				                  </button>
-				                  <ul class="dropdown-menu">
-				                     <li><a href="#">选车辆</a></li>
-				                     <li><a href="#">找仓库</a></li>
-				                     <li><a href="#">查订单</a></li>
-				                     <li class="divider"></li>
-				                     <li><a href="#">搜资讯</a></li>
-				                  </ul>
-              				</div><!-- input-group-btn -->
-							<input type="text" class="form-control" id="name" placeholder="请输入名称">
+								<input type="text" class="form-control" id="name" placeholder="请输入名称">
 			                    <span class="input-group-btn">
 			                  	    <button type="button" class="btn btn-primary">
 			  							<span class="glyphicon glyphicon-search"></span> 搜索go
@@ -206,7 +208,7 @@
 			</div>
 			<div class="send-bg-color">
 				<img src="images/house2.png" alt="配送">
-				<span><a class="send-color" href="">我要配送</a></span>
+				<span><a class="send-color" href="">我要配货</a></span>
 			</div>
 		</div>
 		<!-- delivery结束 -->
@@ -252,14 +254,15 @@
     
     <!--data-statistics-->
 	<div id="data-statistics">
-		<h2>物流数据统计</h2>
+		<h2><!-- 物流数据统计 --></h2>
 		<div class="data-img">
-			<img src="images/data.png" />
-			<img src="images/data1.png" />
-			<img src="images/data2.png" />
-			<img src="images/data3.png" />
-			<img src="images/data4.png" />
-		</div>	
+			<div id="pie1" style="width:236px; height:220px;"></div>
+			<div id="pie2" style="width:236px; height:220px;"></div>
+			<div id="bar1" style="width:236px; height:220px;"></div>
+			<div id="bar2" style="width:236px; height:220px;"></div>
+			<div id="line1" style="width:236px; height:220px;"></div>
+		
+	</div>
 	</div>
 	<!--data-statistics结束-->	
 	
@@ -639,10 +642,10 @@
 		</ul>
 	</div><!-- 实用工具 -->
 
-</div><!-- deliveryMap -->
+	</div><!-- deliveryMap -->
 
 
-<div id="main-job">
+	<div id="main-job">
 		<div class="company">
 			<h1>企业招聘</h1>
 			<table border="1">
@@ -787,59 +790,154 @@
 				<li>南昌鸿达货运服务有限公司</li>
 			</ul>
 		</div>
-	</div>
+	</div><!-- partner -->
 
 
+  <!-- 特色馆 -->
 
-<div class="footer" >
-	<div class="footer_list">
-		<p>
-		  	<a href="">国家商务部</a>
-		  	<b>|</b>
-		  	<a href="">国家发改委</a>
-		  	<b>|</b>
-		  	<a href="">家财政部</a>
-		  	<b>|</b>
-		  	<a href="">国家科技</a>
-		  	<b>|</b>
-		  	<a href="">国家交通部</a>
-		  	<b>|</b>
-		  	<a href="">江西省商务厅</a>
-		  	<b>|</b>
-		  	<a href="">江西省发改委</a>
-		  	<b>|</b>
-		  	<a href="">江西省财政厅</a>
-		  	<b>|</b>
-		  	<a href="">江西省科技厅</a>
-		  	<b>|</b>
-		  	<a href="">江西省交通行</a>
-		  	<b>|</b>
-		  	<a href="">南昌公安交警网</a>
-		  	<b>|</b>
-		  	<a href="">江西省运输信息网</a>
-		</p>
+<!-- 	<div class="special">
+		<div>
+			<a href=""><img src="images/bed.jpg" alt=""></a>
+			<dl>
+				<dt>货物名称</dt>
+				<dd>佐菲亚 真皮床</dd><br>
+				<dt>产地：</dt>
+				<dd>江西省</dd><br>
+				<dt>价格:</dt>
+				<dd>¥1450.00</dd><br>
+			</dl>
+		</div>
+		<div>
+			<a href=""><img src="images/bed.jpg" alt=""></a>
+			<dl>
+				<dt>货物名称</dt>
+				<dd>佐菲亚 真皮床</dd><br>
+				<dt>产地：</dt>
+				<dd>江西省</dd><br>
+				<dt>价格:</dt>
+				<dd>¥1450.00</dd><br>
+			</dl>
+		</div>
+		<div>
+			<a href=""><img src="images/bed.jpg" alt=""></a>
+			<dl>
+				<dt>货物名称</dt>
+				<dd>佐菲亚 真皮床</dd><br>
+				<dt>产地：</dt>
+				<dd>江西省</dd><br>
+				<dt>价格:</dt>
+				<dd>¥1450.00</dd><br>
+			</dl>
+		</div>
+		<div>
+			<a href=""><img src="images/bed.jpg" alt=""></a>
+			<dl>
+				<dt>货物名称</dt>
+				<dd>佐菲亚 真皮床</dd><br>
+				<dt>产地：</dt>
+				<dd>江西省</dd><br>
+				<dt>价格:</dt>
+				<dd>¥1450.00</dd><br>
+			</dl>
+		</div>
+		<div>
+			<a href=""><img src="images/bed.jpg" alt=""></a>
+			<dl>
+				<dt>货物名称</dt>
+				<dd>佐菲亚 真皮床</dd><br>
+				<dt>产地：</dt>
+				<dd>江西省</dd><br>
+				<dt>价格:</dt>
+				<dd>¥1450.00</dd><br>
+			</dl>
+		</div>
+		<div>
+			<a href=""><img src="images/bed.jpg" alt=""></a>
+			<dl>
+				<dt>货物名称</dt>
+				<dd>佐菲亚 真皮床</dd><br>
+				<dt>产地：</dt>
+				<dd>江西省</dd><br>
+				<dt>价格:</dt>
+				<dd>¥1450.00</dd><br>
+			</dl>
+		</div>
+		<div>
+			<a href=""><img src="images/bed.jpg" alt=""></a>
+			<dl>
+				<dt>货物名称</dt>
+				<dd>佐菲亚 真皮床</dd><br>
+				<dt>产地：</dt>
+				<dd>江西省</dd><br>
+				<dt>价格:</dt>
+				<dd>¥1450.00</dd><br>
+			</dl>
+		</div>
+		<div>
+			<a href=""><img src="images/bed.jpg" alt=""></a>
+			<dl>
+				<dt>货物名称</dt>
+				<dd>佐菲亚 真皮床</dd><br>
+				<dt>产地：</dt>
+				<dd>江西省</dd><br>
+				<dt>价格:</dt>
+				<dd>¥1450.00</dd><br>
+			</dl>
+		</div>
 
-		<p>
-			<a href="">中华物流网</a>
-		  	<b>|</b>
-		  	<a href="">智慧流通网</a>
-		  	<b>|</b>
-		  	<a href="">物流中国</a>
-		  	<b>|</b>
-		  	<a href="">物流金融</a>
-		  	<b>|</b>
-		  	<a href="">满意网</a>
-		  	<b>|</b>
-		  	<a href="">锦程物流网</a>
-		  	<b>|</b>
-		  	<a href="">物流唐山</a>
-		  	<b>|</b>
-		  	<a href="">太原市公共信息平台</a>
-		  	<b>|</b>
-		  	<a href="">南京城市共同配送管理平台</a>
-		</p>
+
+	</div> -->
 
 
+  <!-- special_home -->
+
+	<div class="footer" >
+		<div class="footer_list">
+			<p>
+			  	<a href="">国家商务部</a>
+			  	<b>|</b>
+			  	<a href="">国家发改委</a>
+			  	<b>|</b>
+			  	<a href="">家财政部</a>
+			  	<b>|</b>
+			  	<a href="">国家科技</a>
+			  	<b>|</b>
+			  	<a href="">国家交通部</a>
+			  	<b>|</b>
+			  	<a href="">江西省商务厅</a>
+			  	<b>|</b>
+			  	<a href="">江西省发改委</a>
+			  	<b>|</b>
+			  	<a href="">江西省财政厅</a>
+			  	<b>|</b>
+			  	<a href="">江西省科技厅</a>
+			  	<b>|</b>
+			  	<a href="">江西省交通行</a>
+			  	<b>|</b>
+			  	<a href="">南昌公安交警网</a>
+			  	<b>|</b>
+			  	<a href="">江西省运输信息网</a>
+			</p>
+
+			<p>
+				<a href="">中华物流网</a>
+			  	<b>|</b>
+			  	<a href="">智慧流通网</a>
+			  	<b>|</b>
+			  	<a href="">物流中国</a>
+			  	<b>|</b>
+			  	<a href="">物流金融</a>
+			  	<b>|</b>
+			  	<a href="">满意网</a>
+			  	<b>|</b>
+			  	<a href="">锦程物流网</a>
+			  	<b>|</b>
+			  	<a href="">物流唐山</a>
+			  	<b>|</b>
+			  	<a href="">太原市公共信息平台</a>
+			  	<b>|</b>
+			  	<a href="">南京城市共同配送管理平台</a>
+			</p>
 
 	</div><!-- footer_list -->
 
@@ -875,34 +973,31 @@
 	<!-- elevator 跳转 -->
 	<div id="elevator" class="elevator">
 		<a class="home">house</a>
-		<a href="#data-statistics"><span>1F</span></a>
-		<a href="#content"><span>2F</span></a>
-		<a href="#content-two"><span>3F</span></a>
-		<a href="#content-three"><span>4F</span></a>
-		<a href="#deliveryMap"><span>5F</span></a>
-		<a href="#main-job"><span>6F</span></a>
-		<a href="#partner"><span>7F</span></a>
+		<a href="#content"><span>车辆信息</span></a>
+		<a href="#content-two"><span>货源信息</span></a>
+		<a href="#content-three"><span>仓储信息</span></a>
+		<a href="#deliveryMap"><span>配送地图</span></a>
+		<a href="#main-job"><span>企业招聘</span></a>
+		<a href="#partner"><span>陆运物流</span></a>
+		<a href=""><span>7F</span></a>
 		<a href="#"><span>返回顶部</span></a>
 		
 	</div><!-- elevator -->
 	
-	
-  
+	 <script src="js/echarts-all.js"></script>
+ <script src="js/myChart.js"></script>
+
 <script>
 
-
-
  $(function(){
+        $('#h_nav_ul').find('li').mouseover(function(){
+            $(this).find('.h_sub_menu').show();
+        });
+        $('#h_nav_ul').find('li').mouseout(function(){
+            $(this).find('.h_sub_menu').hide();
+        });
+    });
 
-
-
-
-
-
-
-
-   
-})
 </script>
 
 

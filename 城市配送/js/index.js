@@ -30,8 +30,18 @@ $(function(){
 		var winheight=$(window).height();
 		var odivheight=$('#elevator').height();
 		var t=scrolltop+(winheight-odivheight)/2;
-		console.log(parseInt(t));
+		console.log(scrolltop);
+
+		if(scrolltop>450){
+			$('.elevator').show();
+		}else{
+			$('.elevator').hide();
+		}
+
 		startMove($('.elevator')[0],{top:parseInt(t)});
+
+
+
 	});
 
 
