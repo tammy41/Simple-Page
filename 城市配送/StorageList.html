@@ -10,6 +10,7 @@
     <script src="js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/bread.css">
 	<link rel="stylesheet" href="css/common.css">
 </head>
 <body>
@@ -52,25 +53,20 @@
  					</div>
 			</div><!--register结束-->
 
-
+					<div class="select_option">
+						<select name="" id="">
+				               	<option value="" selected="selected">淘货源</option>
+				               	<option value="">选车辆</option>
+				               	<option value="">找仓库</option>
+				               	<option value="">查订单</option>
+				               	<option value="">搜资讯</option>
+						</select>
+					</div>
 			<div class="right">
 				<form class="form-inline hidden-xs" role="form" action="">
 					<div class="form-group">
 				 		<div class="input-group">
-						 	<div class="input-group-btn">
-				                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-				                     淘货源 
-				                     <span class="caret"></span>
-				                  </button>
-				                  <ul class="dropdown-menu">
-				                     <li><a href="#">选车辆</a></li>
-				                     <li><a href="#">找仓库</a></li>
-				                     <li><a href="#">查订单</a></li>
-				                     <li class="divider"></li>
-				                     <li><a href="#">搜资讯</a></li>
-				                  </ul>
-              				</div><!-- input-group-btn -->
-							<input type="text" class="form-control" id="name" placeholder="请输入名称">
+								<input type="text" class="form-control" id="name" placeholder="请输入名称">
 			                    <span class="input-group-btn">
 			                  	    <button type="button" class="btn btn-primary">
 			  							<span class="glyphicon glyphicon-search"></span> 搜索go
@@ -102,7 +98,7 @@
                     <li><a href="#">最新货单</a> </li>
                     <li><a href="#">最新车源</a></li>
                     <li><a href="#">成交订单</a></li>
-                </u>
+                </ul>
             </li>
 			<li><a href="#">城配资源</a>
                 <ul class="h_sub_menu">
@@ -134,6 +130,10 @@
 
                 </ul>
             </li>
+
+		</ul>
+            </li>
+			
 
 		</ul>
 	</div>
@@ -278,7 +278,7 @@
 								<th width="20%">仓储面积</th>
 								<th width="15%">发布日期</th>
 								<th width="10%">浏览次数</th>
-								<th width="10%"></th>
+								<th width="10%">操作</th>
 							</tr>
 							<tr>
 								<td>
@@ -334,60 +334,7 @@
 								</td>
 								<td align="center" valign="middle"><a href="#" class="details">查看详情</a></td>
 							</tr>
-							<tr>
-								<td>
-									<div class="title-img"><img src="" alt="略缩图"/></div>
-									<ul class="depot-info">
-										<li class="area-info">华南城10000平仓库急租</li>
-										<li>所属区域：<font class="area">红谷滩区</font></li>
-										<li>联系人：<font class="person-name">王先生</font></li>
-										<li>联系方式：<font class="tel">12345678901</font></li>
-										<li>求租面积：<font class="acreage">100</font></li>
-									</ul>
-								</td>
-								<td>
-									<ul class="acreage-info">
-										<li>仓库面积：<font>10000000</font>m²</li>
-										<li>闲置面积：<font>10000000</font>m²</li>
-										<li>起租面积：<font>10000000</font>m²</li>
-										<li>租金价格：32.00元/ m²/月</li>
-									</ul>
-								</td>
-								<td align="center" valign="middle">
-									<a href="#" class="release-date">2016-3-14</a>
-								</td>
-								<td align="center" valign="middle">
-									20
-								</td>
-								<td align="center" valign="middle"><a href="#" class="details">查看详情</a></td>
-							</tr>
-							<tr>
-								<td>
-									<div class="title-img"><img src="" alt="略缩图"/></div>
-									<ul class="depot-info">
-										<li class="area-info">华南城10000平仓库急租</li>
-										<li>所属区域：<font class="area">红谷滩区</font></li>
-										<li>联系人：<font class="person-name">王先生</font></li>
-										<li>联系方式：<font class="tel">12345678901</font></li>
-										<li>求租面积：<font class="acreage">100</font></li>
-									</ul>
-								</td>
-								<td>
-									<ul class="acreage-info">
-										<li>仓库面积：<font>10000000</font>m²</li>
-										<li>闲置面积：<font>10000000</font>m²</li>
-										<li>起租面积：<font>10000000</font>m²</li>
-										<li>租金价格：32.00元/ m²/月</li>
-									</ul>
-								</td>
-								<td align="center" valign="middle">
-									<a href="#" class="release-date">2016-3-14</a>
-								</td>
-								<td align="center" valign="middle">
-									20
-								</td>
-								<td align="center" valign="middle"><a href="#" class="details">查看详情</a></td>
-							</tr>
+							
 						</table>
 					</div>
 					<!--lease-table end-->
