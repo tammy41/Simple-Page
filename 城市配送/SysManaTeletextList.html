@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>图文资讯列表</title>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="">
+    <meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+	<script src="js/jquery-2.1.4.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/common.css">
+	<!-- <link rel="stylesheet" href="css/vip.css"> -->
+</head>
+<body>
+
+<!-- 网站头区域 -->
+	<div id="headerWrap">
+		<div class="header">
+			<div class="left">
+				<h1 class="logo"><img src="images/logo.png" alt="城市配送"></h1>
+			</div>
+
+ 			<!-- <div class="register">
+					<div class="btn-group">
+							  <button type="button" class="btn btn-primary">
+									<span class="glyphicon glyphicon-user"></span> 登录
+							  </button>
+							  <button type="button" class="btn btn-primary">
+							  		<span class="glyphicon glyphicon-star"></span> 免费注册
+							  </button>
+ 					</div>
+			</div> --><!--register结束-->
+
+					<div class="select_option">
+						<select name="" id="">
+				               	<option value="" selected="selected">淘货源</option>
+				               	<option value="">选车辆</option>
+				               	<option value="">找仓库</option>
+				               	<option value="">查订单</option>
+				               	<option value="">搜资讯</option>
+						</select>
+					</div>
+			<div class="right">
+				<form class="form-inline hidden-xs" role="form" action="">
+					<div class="form-group">
+				 		<div class="input-group">
+								<input type="text" class="form-control" id="name" placeholder="请输入名称">
+			                    <span class="input-group-btn">
+			                  	    <button type="button" class="btn btn-primary">
+			  							<span class="glyphicon glyphicon-search"></span> 搜索go
+									</button>
+			               		</span>
+           		 		</div><!-- /input-group -->
+					</div><!--form-group-->
+				</form>
+			</div><!--right结束-->
+
+		</div><!--header-->
+	</div><!--headerWrap结束-->
+
+
+
+	<!-- vip -->
+
+	<div id="vip_content">
+	<div id="vip_left">
+		<div id="sub_nav">会员中心</div>
+		<div id="vip_menu">
+
+			<div id="border"></div>
+			<ul id="main_menu">
+			  <li>我的资源
+
+	              <ul class="sub_menu">
+				  		<li><a href="#">发布货源</a></li>
+				  		<li><a href="#">我的货源</a></li>
+				  		<li><a href="#">出租仓库</a></li>
+				  		<li><a href="#">我的仓库</a></li>
+				  		<li><a href="#">发布车源</a></li>
+				  		<li><a href="#">我的车源</a></li>
+				  		<li><a href="#">发布物流资源</a></li>
+				  	</ul>
+			  </li>
+			  	
+			  <li>我的账户
+				  <ul class="sub_menu">
+				  		<li><a href="#">我的订单</a></li>
+				  		<li><a href="#">订单跟踪</a></li>
+				  		<li><a href="#">我的的账单</a></li>
+				  		<li><a href="#">收支明细</a></li>
+				  		<li><a href="#">账户充值</a></li>
+				  		<li><a href="#">账户提现</a></li>
+				  		<li><a href="#">账户余额</a></li>
+				  	</ul>
+			  	</li>
+			  	
+			  <li>人才招聘
+				  <ul class="sub_menu">
+				  	 	<li><a href="#">企业招聘</a></li>
+				  	 	<li><a href="#">物流人才</a></li>
+
+				  	 </ul> 
+			  	 </li>
+			  	
+			  <li class="no_sub"><a href="#">登记末端网点</a></li>
+			  <li class="no_sub"><a href="#">物流招标</a></li>
+			  <li class="no_sub"><a href="#">信用等级</a></li>
+
+			  <li >企业网站
+				  <ul class="sub_menu">
+				  		<li><a href="#">企业网站设置</a></li>
+				  	</ul>
+			  	</li>
+			  	
+			  <li>我的资源登记
+			  <ul class="sub_menu">
+			  		<li><a href="#">登记我的车牌</a></li>
+			  		<li><a href="#">登记我的仓储</a></li>
+			  		<li><a href="#">登记我的设备</a></li>
+			  		<li><a href="#">登记我的托盘</a></li>
+
+			  	</ul></li>
+			  	
+			  <li>系统管理
+				  <ul class="sub_menu">
+				  		<li><a href="#">基本信息</a></li>
+				  		<li><a href="#">修改密码</a></li>
+				  	</ul>
+			  	</li>
+
+			</ul>
+		</div><!--vip_menu-->
+	</div><!--vip_left-->
+
+
+
+		<div id="vip_right">
+
+			<div id="breadcrumb-main">
+					<div class="dl-list">
+						<dl>
+							<dt>标题:</dt>
+							<dd>
+								<input type="text" placeholder="请输入关键字">
+							</dd>
+							<dt>状态:</dt>
+							<dd>
+								<select name="" id="">
+									<option value="">待发布</option>
+									<option value="">待审核</option>
+									<option value="">正常发布</option>
+									<option value="">已撤销</option>
+								</select>
+							</dd>
+						</dl>
+						<dl>
+							<dt>发布时间:</dt>
+							<dd>
+								<a href="">所有</a>
+								<a href="">当天</a>
+								<a href="">近一周</a>
+								<a href="">近一月</a>
+								<a href="">近三月</a>
+							</dd>
+						</dl>
+						<dl>
+							<dt>
+							
+							</dt>
+							<dd>
+								<button type="submit" class="btn btn-default search">查询</button>
+							</dd>
+						</dl>
+						
+					</div>
+					
+					<div class="manage_table">
+						<h1 style="padding-bottom: 10px;float: right;">
+							<button type="button" class="btn btn-primary">新增</button>
+						</h1>
+						<table>
+							<tr>
+								<th>标题</th>
+								<th>信息类型</th>
+								<th>发布时间</th>
+								<th>发布人</th>
+								<th>状态</th>
+								<th>浏览数</th>
+								<th>操作</th>
+							</tr>
+							<tr>
+								<td>物流团购成立2周年庆典</td>
+								<td>平台公告</td>
+								<td>2016-3-14</td>
+								<td>王俊普</td>
+								<td>已发布</td>
+								<td>20</td>
+								<td>
+									<a href="">修改</a>
+									<a href="">发布</a>
+									<a href="">撤销</a>
+								</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+						</table>
+					</div>
+
+
+					<!-- 分页 -->
+					<div id="turn-page">
+					    <div class="record">
+							第<span class="pageCurrent num" id="now-page">1</span>/<span class="all-page num" id="all-page">2</span>页,
+							每页<span class="totalRecords num">10</span>条
+					    </div>
+					    <span class="page-btnLink">
+							<input type="text" value="1" id="page-tum"></input>
+							<input type="button" value="跳转到" id="page-btn"></input>
+						</span>
+						<span id="page-link">
+						</span>
+						
+						
+					</div>    
+				</div>
+			</div>
+
+
+		</div><!--vip_right-->
+
+
+
+
+
+	</div><!--vip_content-->
+
+	<div class="footer" >
+		<div class="footer_list">
+			<p>
+			  	<a href="">国家商务部</a>
+			  	<b>|</b>
+			  	<a href="">国家发改委</a>
+			  	<b>|</b>
+			  	<a href="">家财政部</a>
+			  	<b>|</b>
+			  	<a href="">国家科技</a>
+			  	<b>|</b>
+			  	<a href="">国家交通部</a>
+			  	<b>|</b>
+			  	<a href="">江西省商务厅</a>
+			  	<b>|</b>
+			  	<a href="">江西省发改委</a>
+			  	<b>|</b>
+			  	<a href="">江西省财政厅</a>
+			  	<b>|</b>
+			  	<a href="">江西省科技厅</a>
+			  	<b>|</b>
+			  	<a href="">江西省交通行</a>
+			  	<b>|</b>
+			  	<a href="">南昌公安交警网</a>
+			  	<b>|</b>
+			  	<a href="">江西省运输信息网</a>
+			</p>
+
+			<p>
+				<a href="">中华物流网</a>
+			  	<b>|</b>
+			  	<a href="">智慧流通网</a>
+			  	<b>|</b>
+			  	<a href="">物流中国</a>
+			  	<b>|</b>
+			  	<a href="">物流金融</a>
+			  	<b>|</b>
+			  	<a href="">满意网</a>
+			  	<b>|</b>
+			  	<a href="">锦程物流网</a>
+			  	<b>|</b>
+			  	<a href="">物流唐山</a>
+			  	<b>|</b>
+			  	<a href="">太原市公共信息平台</a>
+			  	<b>|</b>
+			  	<a href="">南京城市共同配送管理平台</a>
+			</p>
+		</div><!-- footer_list -->
+
+  	<div class="footer-bd">
+    <p>
+	    <a href="#">关于我们</a>
+	    <b>|</b>
+	    <a href="#">服务条款</a>
+	    <b>|</b>
+	    <a href="#">诚邀加盟</a>
+	    <b>|</b>
+	    <a href="#">联系我们</a>
+	    <b>|</b>
+	    <a href="#">APP下载</a>
+	    <b>|</b>
+	    <a href="#">投诉与建议</a>
+	    <b>|</b>
+	    <a href="#">合作伙伴</a>
+	</p>
+    <p>
+	    <span>主办：<a href="#">南昌市商务局</a></span>
+	    <b>|</b>
+	    <span>承办：<a href="#">江西尧泰供应链管理有限公司</a></span>
+	    
+    </p>
+    <p>
+    	<span>备案号：沪ICP备XXXXXX号</span>
+        <span>网站制度 证照信息公示</span>
+    </p>
+  	</div><!-- footer-bd -->
+  	</div><!--footer-->	
+	<script>
+		$(function(){
+			
+			
+			$("#main_menu").find("li").mouseover(function(){
+				var _top=$(this).offset().top;
+
+				
+
+                $(this).find(".sub_menu").css({
+                	"top":_top-191+"px",
+                	"display":"block"
+                	
+                });
+                $("#border").css({
+                	"top":_top-190+"px",
+                	"display":"block"
+                });
+
+			});
+			$("#main_menu").find("li").mouseout(function(){
+				
+                $(this).find(".sub_menu").css({
+                	"display":"none"
+                });
+                $("#border").css({
+       
+                	"display":"none"
+                });
+
+			});
+			 page({
+				id : 'page-link',
+				nowPage :1,//当前页
+				allPage : 10,//总页数
+				callBack : function(now,all){
+					
+				}
+			});
+
+		});
+
+	</script>
+	<script type="text/javascript" src="js/paging.js"></script>
+</body>
+</html>
