@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>会员注册</title>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="">
+    <meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+
+</head>
+<body>
+<div id="member-register">
+	<div id="select-register">
+		<a href="#" id="user-register" class="user-register">用户注册</a>
+		<a href="#" id="cor-register" class="cor-register">企业注册</a>
+	</div>
+	<div id="users-register">
+		<form> 
+			<table>
+				<tr>
+					<td><div class="right-style"><span class="sign">* </span>用户类型：</div></td>
+					<td><input type="radio" checked="checked" name="user-type" value="consignor" />货主
+					<input type="radio" name="user-type" value="driver" />司机</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><div class="right-style"><span class="sign">* </span>登录名：</div></td>
+					<td><input type="text" name="user-name" value="" id="user-name"></td>
+					<td>
+						<span class="info info-user">6~20位，支持英文、数字、下划线</span>
+						<span class="info info-error">! 用户名不符合规范</span>
+						<span class="info info-OK info-success">OK</span>
+					</td>
+				</tr>
+				<tr>
+					<td><div class="right-style"><span class="sign">* </span>手机号码：</div></td>
+					<td><input type="text" name="telephone-number" value="" id="telephone-number"></td>
+					<td><a href="#" class="SendVCode">发送验证码</a>
+						<span class="info info-tel-error">! 请输入正确的手机号</span>
+						<span class="info info-OK info-tel-success">OK</span>
+					</td>
+				</tr>
+				<tr>
+					<td><div class="right-style"><span class="sign">* </span>短信验证码：</div></td>
+					<td><input type="text" name="Message-Code" value="" id="Message-Code"></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><div class="right-style"><span class="sign">* </span>登录密码：</div></td>
+					<td><input type="password" name="Login-password" value="" id="Login-password"></td>
+					<td><span class="info info-password">密码长度6~20位字符（不区分大小写）</span>
+						<span class="info info-password-error">! 密码不符合规范</span>
+						<span class="info info-OK info-password-success">OK</span>
+					</td>
+				</tr>
+				<tr>
+					<td><div class="right-style"><span class="sign">* </span>确认密码：</div></td>
+					<td><input type="password" name="confirm-password" value="" id="confirm-password"></td>
+					<td><span class="info info-re-password">密码长度6~20位字符（不区分大小写）</span>
+						<span class="info info-re-password-error">! 密码不匹配</span>
+						<span class="info info-OK info-re-password-success">OK</span>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="3"><div class="userService"><input type="checkbox">同意<a href="#">用户服务协议</a></div></td>
+				</tr>
+				<tr>
+					<td align="center" colspan="3"><input type="submit" value="同意协议并注册" class="submit-login"></td>
+				</tr>
+			</table>
+		</form>
+	</div>
+	<div id="corporate-register"  class="hide-div">
+		<form>
+			<table>
+				<tr>
+					<td><div class="right-style"><span class="sign">* </span>用户类型：</div></td>
+					<td><input type="radio" checked="checked" name="cor-user-type" value="consignor" />货主
+					<input type="radio" name="cor-user-type" value="driver" />司机</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><div class="right-style"><span class="sign">* </span>登录名：</div></td>
+					<td><input type="text" name="cor-user" value="" id="cor-user"></td>
+					<td>
+						<span class="info info-user">6~20位，支持英文、数字、下划线</span>
+						<span class="info info-error">! 用户名不符合规范</span>
+						<span class="info info-OK info-success">OK</span>
+					</td>
+				</tr>
+				<tr>
+					<td><div class="right-style"><span class="sign">* </span>登录密码：</div></td>
+					<td><input type="password" name="corLogin-password" value="" id="corLogin-password"></td>
+					<td><span class="info info-password">密码长度6~20位字符（不区分大小写）</span>
+						<span class="info info-password-error">! 密码不符合规范</span>
+						<span class="info info-OK info-password-success">OK</span>
+					</td>
+				</tr>
+				<tr>
+					<td><div class="right-style"><span class="sign">* </span>确认密码：</div></td>
+					<td><input type="password" name="cor-confirm-password" value="" id="cor-confirm-password"></td>
+					<td><span class="info info-re-password">密码长度6~20位字符（不区分大小写）</span>
+						<span class="info info-re-password-error">! 密码不匹配</span>
+						<span class="info info-OK info-re-password-success">OK</span>
+					</td>
+				</tr>
+				<tr>
+					<td class="basic-title">企业基本信息</td>
+				</tr>
+				<tr>
+					<td><div class="right-style"><span class="sign">* </span>企业名称：</div></td>
+					<td><input type="text" name="cor-designation" value="" id="cor-designation"></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><div class="right-style">业务联系人：</div></td>
+					<td><input type="text" name="cor-contacts" value="" id="cor-contacts"></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><div class="right-style">联系人手机：</div></td>
+					<td><input type="text" name="cor-contacts-tel" value="" id="cor-contacts-tel"></td>
+					<td>提示：为及时接受平台通知信息，建议填写有效手机号</td>
+				</tr>
+				<tr>
+					<td><div class="right-style"><span class="sign">* </span>联系地址：</div></td>
+					<td>
+		              	<select name="city" id="selCity">
+		                  	<option value="0">请选择...</option>
+		                    <option value="1">南昌市</option>
+		                </select>
+				        <select name="district" id="selDistricts">
+				            <option value="0">请选择...</option>
+				            <option value="西湖区">西湖区</option>
+							<option value="东湖区">东湖区</option>
+							<option value="青山湖">青山湖</option>
+							<option value="高新区">高新区</option>
+							<option value="红谷滩">红谷滩</option>
+							<option value="新建区">新建区</option>
+							<option value="青云谱">青云谱</option>
+				    	</select>
+				    </td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><input type="text" value="**街道"></td>
+				</tr>
+				<tr>
+					<td colspan="3"><div class="userService"><input type="checkbox">同意<a href="#">用户服务协议</a></div></td>
+				</tr>
+				<tr>
+					<td align="center" colspan="3"><input type="submit" value="同意协议并注册" class="submit-login"></td>
+				</tr>
+			</table>
+		</form>
+	</div>
+</div>
+
+<script type="text/javascript">
+	window.onload=function(){
+		userSwitchover();
+	}
+	function userSwitchover(){
+		var userRegister = document.getElementById('user-register');
+		var cRegister = document.getElementById('cor-register');
+
+		var usersRegister = document.getElementById('users-register');
+		var corRegister = document.getElementById('corporate-register');
+
+		userRegister.onclick = function(){
+			usersRegister.className = null;
+			corRegister.className = 'hide-div';
+		}
+		cRegister.onclick = function(){
+			usersRegister.className = 'hide-div';
+			corRegister.className = null;
+		}
+	}
+</script>
+<script src="js/jquery-2.1.4.js"></script>
+<script type="text/javascript" src="js/register.js"></script>
+</body>
+</html>
