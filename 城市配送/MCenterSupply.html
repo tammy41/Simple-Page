@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>发布货源</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+    <script src="js/jquery-2.1.4.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/common.css">
+
+    <!-- <link rel="stylesheet" href="css/vip.css"> -->
+</head>
+<body>
+
+<!-- 网站头区域 -->
+<div id="headerWrap">
+    <div class="header">
+        <div class="left">
+            <h1 class="logo"><img src="images/logo.png" alt="城市配送"></h1>
+        </div>
+
+        <div class="register">
+            <div class="btn-group">
+                <button type="button" class="btn btn-primary">
+                    <span class="glyphicon glyphicon-user"></span> 登录
+                </button>
+                <button type="button" class="btn btn-primary">
+                    <span class="glyphicon glyphicon-star"></span> 免费注册
+                </button>
+            </div>
+        </div><!--register结束-->
+
+        <div class="select_option">
+            <select name="" id="">
+                <option value="" selected="selected">淘货源</option>
+                <option value="">选车辆</option>
+                <option value="">找仓库</option>
+                <option value="">查订单</option>
+                <option value="">搜资讯</option>
+            </select>
+        </div>
+        <div class="right">
+            <form class="form-inline hidden-xs" role="form" action="">
+                <div class="form-group">
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="name" placeholder="请输入名称">
+			                    <span class="input-group-btn">
+			                  	    <button type="button" class="btn btn-primary">
+                                        <span class="glyphicon glyphicon-search"></span> 搜索go
+                                    </button>
+			               		</span>
+                    </div><!-- /input-group -->
+                </div><!--form-group-->
+            </form>
+        </div><!--right结束-->
+
+    </div><!--header-->
+</div><!--headerWrap结束-->
+
+
+
+<!-- vip -->
+
+<div id="vip_content">
+    <div id="vip_left">
+        <div id="sub_nav">会员中心</div>
+        <div id="vip_menu">
+
+            <div id="border"></div>
+            <ul id="main_menu">
+                <li>我的资源
+
+                    <ul class="sub_menu">
+                        <li><a href="#">发布货源</a></li>
+                        <li><a href="#">我的货源</a></li>
+                        <li><a href="#">出租仓库</a></li>
+                        <li><a href="#">我的仓库</a></li>
+                        <li><a href="#">发布车源</a></li>
+                        <li><a href="#">我的车源</a></li>
+                        <li><a href="#">发布物流资源</a></li>
+                    </ul>
+                </li>
+
+                <li>我的账户
+                    <ul class="sub_menu">
+                        <li><a href="#">我的订单</a></li>
+                        <li><a href="#">订单跟踪</a></li>
+                        <li><a href="#">我的的账单</a></li>
+                        <li><a href="#">收支明细</a></li>
+                        <li><a href="#">账户充值</a></li>
+                        <li><a href="#">账户提现</a></li>
+                        <li><a href="#">账户余额</a></li>
+                    </ul>
+                </li>
+
+                <li>人才招聘
+                    <ul class="sub_menu">
+                        <li><a href="#">企业招聘</a></li>
+                        <li><a href="#">物流人才</a></li>
+
+                    </ul>
+                </li>
+
+                <li class="no_sub"><a href="#">登记末端网点</a></li>
+                <li class="no_sub"><a href="#">物流招标</a></li>
+                <li class="no_sub"><a href="#">信用等级</a></li>
+
+                <li >企业网站
+                    <ul class="sub_menu">
+                        <li><a href="#">企业网站设置</a></li>
+                    </ul>
+                </li>
+
+                <li>我的资源登记
+                    <ul class="sub_menu">
+                        <li><a href="#">登记我的车牌</a></li>
+                        <li><a href="#">登记我的仓储</a></li>
+                        <li><a href="#">登记我的设备</a></li>
+                        <li><a href="#">登记我的托盘</a></li>
+
+                    </ul></li>
+
+                <li>系统管理
+                    <ul class="sub_menu">
+                        <li><a href="#">基本信息</a></li>
+                        <li><a href="#">修改密码</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+        </div><!--vip_menu-->
+    </div><!--vip_left-->
+
+
+
+    <div id="vip_right">
+        <form id="news_release1">
+            <fieldset>
+                <legend>货物信息 <span id="sub_legend">   为了货物安全, 请填写完整、准确的信息</span></legend>
+                <table>
+                    <tr>
+                        <td>
+                        <label for="goods_name">货物名称：</label>
+                        <input type="text" id="goods_name"></td>
+                        <td>
+                            <label for="goods_volume">货物体积：</label>
+                            <input type="text" id="goods_volume">
+                            <span>(单位m^3)</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                             <label for="goods_name">货物重量：</label>
+                            <input type="text" id="goods_weight">
+                            <span>(单位t)</span>
+                        </td>
+                        <td>
+                            <label for="deadline"><p style="width: 14px;float: left;"></p>有效期：</label>
+                            <input type="text" id="deadline">
+                        </td>
+                    </tr>
+
+                </table>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>始发地</legend>
+                <table>
+                    <tr>
+                        <td> <label for="location">所属区域：</label>
+                            <select id="location">
+                                <option value="1">请选择</option>
+                                <option value="2">师大</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="goods_send"><span class="red_start">*</span>发货地址：</label>
+                            <input type="text" id="goods_send">
+                        </td>
+                    </tr>
+                </table>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>目的地</legend>
+                <table>
+                    <tr>
+                        <td><label for="destination">所属区域：</label>
+                            <select id="destination">
+                                <option value="1">请选择</option>
+                                <option value="2">233</option>
+                            </select>
+                        </td>
+                        </tr>
+                    <tr>
+                        <td> <label for="goods_get"><span class="red_start">*</span>收货地址：</label>
+                            <input type="text" id="goods_get"></td>
+                    </tr>
+                </table>
+
+            </fieldset>
+
+            <dl class="with_border">
+                <dt>联系方式</dt>
+                <dd>公司/个人：南昌大众物流公司</dd>
+                <dd><span class="red_start">*</span>联系人：陈云俊</dd>
+            </dl>
+
+            <fieldset>
+                <legend>车型要求</legend>
+                <table>
+                    <tr>
+                        <td>
+                            <label for="car_type">车型要求：</label>
+                            <select id="car_type" class="marginRight">
+                                <option value="1">自卸车</option>
+                                <option value="2">233</option>
+                            </select>
+                        </td>
+                        <td>
+                            <label for="car_size">车长要求：</label>
+                            <select id="car_size">
+                                <option value="1">请选择</option>
+                                <option value="2">233</option>
+                            </select>
+                            <span class="words_af">至</span>
+
+                            <select id="car_size2"class="input_af">
+                                <option value="1">请选择</option>
+                                <option value="2">233</option>
+                            </select>
+                            <span class="words_af">(单位米)</span>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="transf_type">运输类型：</label>
+                            <select id="transf_type">
+                                <option value="1">整车</option>
+                                <option value="2">233</option>
+                            </select>
+                        </td>
+                        <td>
+                            <label for="transf_price">期待运价：</label>
+                            <input type="text" id="transf_price" class="short_input">
+
+                            <select id="transf_price2">
+                                <option value="1">元/吨</option>
+                                <option value="2">233</option>
+                            </select>
+                            <span>(不填表电议)</span>
+                        </td>
+                    </tr>
+                </table>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>详细描述</legend>
+                <table>
+                    <tr>
+                        <td>
+                            <label for="g_category">货物类别：</label>
+                            <select id="g_category" >
+                                <option value="1">不限</option>
+                                <option value="2">233</option>
+                            </select>
+                        </td>
+
+                        <td>
+                            <label for="g_type">货物类型：</label>
+                            <select id="g_type">
+                                <option value="1">重货</option>
+                                <option value="2">233</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="goods_cycle">发货周期：</label>
+                            <input type="text" id="goods_cycle" class="short_input">
+                            <span>到</span>
+                            <input type="text" id="goods_cycle1" class="short_input">
+                        </td>
+                        <td>
+                            <label for="g_times">发货频次：</label>
+                            <select id="g_times" >
+                                <option value="1">一天一次</option>
+                                <option value="2">233</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="g_area">
+                            <label for="g_describe" >详细描述：</label>
+                            <textarea placeholder="限制在250个汉字内(500个字符)" rows="3" cols="20" id="g_describe"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td >
+                            <label for="map_mark">地图标注：</label>
+                            <input type="text" id="map_mark">
+                            <button type="button" class="btn btn-primary btn-xs">插入</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><span>(点击插入地图，在地图上标记红点后，点击地图上的提交按钮)</span></td>
+                    </tr>
+                </table>
+
+            </fieldset>
+           <div id="g_sure">
+               <button type="button" class="btn btn-primary">确认发布</button>
+           </div>
+
+
+        </form>
+
+
+    </div><!--vip_right-->
+
+
+
+
+
+</div><!--vip_content-->
+
+<div class="footer" >
+    <div class="footer_list">
+        <p>
+            <a href="">国家商务部</a>
+            <b>|</b>
+            <a href="">国家发改委</a>
+            <b>|</b>
+            <a href="">家财政部</a>
+            <b>|</b>
+            <a href="">国家科技</a>
+            <b>|</b>
+            <a href="">国家交通部</a>
+            <b>|</b>
+            <a href="">江西省商务厅</a>
+            <b>|</b>
+            <a href="">江西省发改委</a>
+            <b>|</b>
+            <a href="">江西省财政厅</a>
+            <b>|</b>
+            <a href="">江西省科技厅</a>
+            <b>|</b>
+            <a href="">江西省交通行</a>
+            <b>|</b>
+            <a href="">南昌公安交警网</a>
+            <b>|</b>
+            <a href="">江西省运输信息网</a>
+        </p>
+
+        <p>
+            <a href="">中华物流网</a>
+            <b>|</b>
+            <a href="">智慧流通网</a>
+            <b>|</b>
+            <a href="">物流中国</a>
+            <b>|</b>
+            <a href="">物流金融</a>
+            <b>|</b>
+            <a href="">满意网</a>
+            <b>|</b>
+            <a href="">锦程物流网</a>
+            <b>|</b>
+            <a href="">物流唐山</a>
+            <b>|</b>
+            <a href="">太原市公共信息平台</a>
+            <b>|</b>
+            <a href="">南京城市共同配送管理平台</a>
+        </p>
+    </div><!-- footer_list -->
+
+    <div class="footer-bd">
+        <p>
+            <a href="#">关于我们</a>
+            <b>|</b>
+            <a href="#">服务条款</a>
+            <b>|</b>
+            <a href="#">诚邀加盟</a>
+            <b>|</b>
+            <a href="#">联系我们</a>
+            <b>|</b>
+            <a href="#">APP下载</a>
+            <b>|</b>
+            <a href="#">投诉与建议</a>
+            <b>|</b>
+            <a href="#">合作伙伴</a>
+        </p>
+        <p>
+            <span>主办：<a href="#">南昌市商务局</a></span>
+            <b>|</b>
+            <span>承办：<a href="#">江西尧泰供应链管理有限公司</a></span>
+
+        </p>
+        <p>
+            <span>备案号：沪ICP备XXXXXX号</span>
+            <span>网站制度 证照信息公示</span>
+        </p>
+    </div><!-- footer-bd -->
+</div><!--footer-->
+<script>
+    $(function(){
+
+
+        $("#main_menu").find("li").mouseover(function(){
+            var _top=$(this).offset().top;
+
+
+
+            $(this).find(".sub_menu").css({
+                "top":_top-191+"px",
+                "display":"block"
+
+            });
+            $("#border").css({
+                "top":_top-190+"px",
+                "display":"block"
+            });
+
+        });
+        $("#main_menu").find("li").mouseout(function(){
+
+            $(this).find(".sub_menu").css({
+                "display":"none"
+            });
+            $("#border").css({
+
+                "display":"none"
+            });
+
+        });
+
+
+    });
+
+</script>
+
+</body>
+</html>
